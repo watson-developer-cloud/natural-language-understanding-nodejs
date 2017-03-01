@@ -1,0 +1,10 @@
+node_modules
+coverage
+uploads/
+.DS_Store
+logs/
+.env
+*.log
+coverage/
+.idea
+.vscode

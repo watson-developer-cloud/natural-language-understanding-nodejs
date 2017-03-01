@@ -1,0 +1,1289 @@
+{ "query": {
+  "text": "In the rugged Colorado Desert of California, there lies buried a treasure ship sailed there hundreds of years ago by either Viking or Spanish explorers. Some say this is legend; others insist it is fact. A few have even claimed to have seen the ship, its wooden remains poking through the sand like the skeleton of a prehistoric beast.Among those who say they’ve come close to the ship is small-town librarian Myrtle Botts. In 1933, she was hiking with her husband in the Anza-Borrego Desert, not far from the border with Mexico. It was early March, so the desert would have been in bloom, its washed-out yellows and grays beaten back by the riotous invasion of wildflowers. Those wildflowers were what brought the Bottses to the desert, and they ended up near a tiny settlement called Agua Caliente. Surrounding place names reflected the strangeness and severity of the land: Moonlight Canyon, Hellhole Canyon, Indian Gorge.Try Newsweek for only $1.25 per weekTo enter the desert is to succumb to the unknowable. One morning, a prospector appeared in the couple’s camp with news far more astonishing than a new species of desert flora: He’d found a ship lodged in the rocky face of Canebrake Canyon. The vessel was made of wood, and there was a serpentine figure carved into its prow. There were also impressions on its flanks where shields had been attached—all the hallmarks of a Viking craft. Recounting the episode later, Botts said she and her husband saw the ship but couldn’t reach it, so they vowed to return the following day, better prepared for a rugged hike. That wasn’t to be, because, several hours later, there was a 6.4 magnitude earthquake in the waters off Huntington Beach, in Southern California. Botts claimed it dislodged rocks that buried her Viking ship, which she never saw again.There are reasons to doubt her story, yet it is only one of many about sightings of the desert ship. By the time Myrtle and her husband had set out to explore, amid the blooming poppies and evening primrose, the story of the lost desert ship was already about 60 years old. By the time I heard it, while working on a story about desert conservation, it had been nearly a century and a half since explorer Albert S. Evans had published the first account. Traveling to San Bernardino, Evans came into a valley that was “the grim and silent ghost of a dead sea,” presumably Lake Cahuilla. “The moon threw a track of shimmering light,” he wrote, directly upon “the wreck of a gallant ship, which may have gone down there centuries ago.”The route Evans took came nowhere near Canebrake Canyon, and the ship Evans claimed to see was Spanish, not Norse. Others have also seen this vessel, but much farther south, in Baja California, Mexico. Like all great legends, the desert ship is immune to its contradictions: It is fake news for the romantic soul, offering passage into some ancient American dreamtime when blood and gold were the main currencies of civic life.The legend does seem, prima facie, bonkers: a craft loaded with untold riches, sailed by early-European explorers into a vast lake that once stretched over much of inland Southern California, then run aground, abandoned by its crew and covered over by centuries of sand and rock and creosote bush as that lake dried out…and now it lies a few feet below the surface, in sight of the chicken-wire fence at the back of the Desert Dunes motel, $58 a night and HBO in most rooms.Totally insane, right? Let us slink back to our cubicles and never speak of the desert ship again. Let us only believe that which is shared with us on Facebook. Let us banish forever all traces of wonder from our lives.Yet there are believers who insist that, using recent advances in archaeology, the ship can be found. They point, for example, to a wooden sloop from the 1770s unearthed during excavations at the World Trade Center site in lower Manhattan, or the more than 40 ships, dating back perhaps 800 years, discovered in the Black Sea earlier this year.",
+  "features": {
+    "sentiment": {},
+    "keywords": {},
+    "categories": {},
+    "emotion": {},
+    "entities": {},
+    "concepts": {},
+    "semantic_roles": {}
+  }},
+  "results": {
+  "sentiment": {
+    "document": {
+      "score": -0.44463
+    }
+  },
+  "semantic_roles": [
+    {
+      "subject": {
+        "text": "a treasure ship sailed there hundreds of years ago by either Viking or Spanish explorers"
+      },
+      "sentence": "In the rugged Colorado Desert of California, there lies buried a treasure ship sailed there hundreds of years ago by either Viking or Spanish explorers.",
+      "object": {
+        "text": "buried"
+      },
+      "action": {
+        "verb": {
+          "text": "lie",
+          "tense": "present"
+        },
+        "text": "lies",
+        "normalized": "lie"
+      }
+    },
+    {
+      "subject": {
+        "text": "a treasure ship"
+      },
+      "sentence": "In the rugged Colorado Desert of California, there lies buried a treasure ship sailed there hundreds of years ago by either Viking or Spanish explorers.",
+      "action": {
+        "verb": {
+          "text": "sail",
+          "tense": "past"
+        },
+        "text": "sailed",
+        "normalized": "sail"
+      }
+    },
+    {
+      "subject": {
+        "text": "Some"
+      },
+      "sentence": " Some say this is legend; others insist it is fact.",
+      "object": {
+        "text": "this is legend"
+      },
+      "action": {
+        "verb": {
+          "text": "say",
+          "tense": "present"
+        },
+        "text": "say",
+        "normalized": "say"
+      }
+    },
+    {
+      "subject": {
+        "text": "others"
+      },
+      "sentence": " Some say this is legend; others insist it is fact.",
+      "object": {
+        "text": "it is fact"
+      },
+      "action": {
+        "verb": {
+          "text": "insist",
+          "tense": "present"
+        },
+        "text": "insist",
+        "normalized": "insist"
+      }
+    },
+    {
+      "subject": {
+        "text": "A few"
+      },
+      "sentence": " A few have even claimed to have seen the ship, its wooden remains poking through the sand like the skeleton of a prehistoric beast.Among those who say they’ve come close to the ship is small-town librarian Myrtle Botts.",
+      "object": {
+        "text": "to have seen the ship"
+      },
+      "action": {
+        "verb": {
+          "text": "claim",
+          "tense": "past"
+        },
+        "text": "claimed",
+        "normalized": "claim"
+      }
+    },
+    {
+      "subject": {
+        "text": "A few"
+      },
+      "sentence": " A few have even claimed to have seen the ship, its wooden remains poking through the sand like the skeleton of a prehistoric beast.Among those who say they’ve come close to the ship is small-town librarian Myrtle Botts.",
+      "object": {
+        "text": "the ship"
+      },
+      "action": {
+        "verb": {
+          "text": "see",
+          "tense": "past"
+        },
+        "text": "have even claimed to have seen",
+        "normalized": "have even claim to have see"
+      }
+    },
+    {
+      "subject": {
+        "text": "like the skeleton of a prehistoric beast.Among those who say they’ve come close to the ship is small-town librarian Myrtle Botts"
+      },
+      "sentence": " A few have even claimed to have seen the ship, its wooden remains poking through the sand like the skeleton of a prehistoric beast.Among those who say they’ve come close to the ship is small-town librarian Myrtle Botts.",
+      "object": {
+        "text": "through the sand"
+      },
+      "action": {
+        "verb": {
+          "text": "poke",
+          "tense": "present"
+        },
+        "text": "poking",
+        "normalized": "poke"
+      }
+    },
+    {
+      "subject": {
+        "text": "a prehistoric beast.Among those"
+      },
+      "sentence": " A few have even claimed to have seen the ship, its wooden remains poking through the sand like the skeleton of a prehistoric beast.Among those who say they’ve come close to the ship is small-town librarian Myrtle Botts.",
+      "object": {
+        "text": "they’ve come close to the ship"
+      },
+      "action": {
+        "verb": {
+          "text": "say",
+          "tense": "present"
+        },
+        "text": "say",
+        "normalized": "say"
+      }
+    },
+    {
+      "subject": {
+        "text": "they"
+      },
+      "sentence": " A few have even claimed to have seen the ship, its wooden remains poking through the sand like the skeleton of a prehistoric beast.Among those who say they’ve come close to the ship is small-town librarian Myrtle Botts.",
+      "object": {
+        "text": "a prehistoric beast.Among those"
+      },
+      "action": {
+        "verb": {
+          "text": "have",
+          "tense": "present"
+        },
+        "text": "ve come",
+        "normalized": "ve come"
+      }
+    },
+    {
+      "subject": {
+        "text": "they’ve come close to the ship"
+      },
+      "sentence": " A few have even claimed to have seen the ship, its wooden remains poking through the sand like the skeleton of a prehistoric beast.Among those who say they’ve come close to the ship is small-town librarian Myrtle Botts.",
+      "object": {
+        "text": "small-town librarian Myrtle Botts"
+      },
+      "action": {
+        "verb": {
+          "text": "be",
+          "tense": "present"
+        },
+        "text": "is",
+        "normalized": "be"
+      }
+    },
+    {
+      "subject": {
+        "text": "she"
+      },
+      "sentence": " In 1933, she was hiking with her husband in the Anza-Borrego Desert, not far from the border with Mexico.",
+      "object": {
+        "text": "hiking with her husband in the Anza-Borrego Desert, not far from the border with Mexico"
+      },
+      "action": {
+        "verb": {
+          "text": "be",
+          "tense": "past"
+        },
+        "text": "was",
+        "normalized": "be"
+      }
+    },
+    {
+      "subject": {
+        "text": "she"
+      },
+      "sentence": " In 1933, she was hiking with her husband in the Anza-Borrego Desert, not far from the border with Mexico.",
+      "action": {
+        "verb": {
+          "text": "hike",
+          "tense": "past"
+        },
+        "text": "was hiking",
+        "normalized": "be hike"
+      }
+    },
+    {
+      "subject": {
+        "text": "It"
+      },
+      "sentence": " It was early March, so the desert would have been in bloom, its washed-out yellows and grays beaten back by the riotous invasion of wildflowers.",
+      "action": {
+        "verb": {
+          "text": "be",
+          "tense": "past"
+        },
+        "text": "was",
+        "normalized": "be"
+      }
+    },
+    {
+      "subject": {
+        "text": "the desert"
+      },
+      "sentence": " It was early March, so the desert would have been in bloom, its washed-out yellows and grays beaten back by the riotous invasion of wildflowers.",
+      "action": {
+        "verb": {
+          "text": "be",
+          "tense": "future"
+        },
+        "text": "would have been",
+        "normalized": "would have be"
+      }
+    },
+    {
+      "subject": {
+        "text": "its washed-out yellows and grays"
+      },
+      "sentence": " It was early March, so the desert would have been in bloom, its washed-out yellows and grays beaten back by the riotous invasion of wildflowers.",
+      "object": {
+        "text": "by the riotous invasion of wildflowers"
+      },
+      "action": {
+        "verb": {
+          "text": "beat",
+          "tense": "past"
+        },
+        "text": "beaten",
+        "normalized": "beat"
+      }
+    },
+    {
+      "subject": {
+        "text": "Those wildflowers"
+      },
+      "sentence": " Those wildflowers were what brought the Bottses to the desert, and they ended up near a tiny settlement called Agua Caliente.",
+      "object": {
+        "text": "the Bottses"
+      },
+      "action": {
+        "verb": {
+          "text": "bring",
+          "tense": "past"
+        },
+        "text": "brought",
+        "normalized": "bring"
+      }
+    },
+    {
+      "subject": {
+        "text": "they"
+      },
+      "sentence": " Those wildflowers were what brought the Bottses to the desert, and they ended up near a tiny settlement called Agua Caliente.",
+      "action": {
+        "verb": {
+          "text": "end",
+          "tense": "past"
+        },
+        "text": "ended",
+        "normalized": "end"
+      }
+    },
+    {
+      "subject": {
+        "text": "a tiny settlement"
+      },
+      "sentence": " Those wildflowers were what brought the Bottses to the desert, and they ended up near a tiny settlement called Agua Caliente.",
+      "object": {
+        "text": "Agua Caliente"
+      },
+      "action": {
+        "verb": {
+          "text": "call",
+          "tense": "past"
+        },
+        "text": "called",
+        "normalized": "call"
+      }
+    },
+    {
+      "subject": {
+        "text": "the strangeness and severity of the land: Moonlight Canyon, Hellhole Canyon, Indian Gorge.Try Newsweek for only $1.25 per weekTo enter the desert is to succumb to the unknowable"
+      },
+      "sentence": " Surrounding place names reflected the strangeness and severity of the land: Moonlight Canyon, Hellhole Canyon, Indian Gorge.Try Newsweek for only $1.25 per weekTo enter the desert is to succumb to the unknowable.",
+      "object": {
+        "text": "Surrounding place names"
+      },
+      "action": {
+        "verb": {
+          "text": "reflect",
+          "tense": "past"
+        },
+        "text": "reflected",
+        "normalized": "reflect"
+      }
+    },
+    {
+      "subject": {
+        "text": "Moonlight Canyon, Hellhole Canyon, Indian Gorge.Try Newsweek for only $1.25 per weekTo"
+      },
+      "sentence": " Surrounding place names reflected the strangeness and severity of the land: Moonlight Canyon, Hellhole Canyon, Indian Gorge.Try Newsweek for only $1.25 per weekTo enter the desert is to succumb to the unknowable.",
+      "object": {
+        "text": "to the unknowable"
+      },
+      "action": {
+        "verb": {
+          "text": "succumb",
+          "tense": "future"
+        },
+        "text": "is to succumb",
+        "normalized": "be to succumb"
+      }
+    },
+    {
+      "subject": {
+        "text": "a prospector"
+      },
+      "sentence": " One morning, a prospector appeared in the couple’s camp with news far more astonishing than a new species of desert flora: He’d found a ship lodged in the rocky face of Canebrake Canyon.",
+      "action": {
+        "verb": {
+          "text": "appear",
+          "tense": "past"
+        },
+        "text": "appeared",
+        "normalized": "appear"
+      }
+    },
+    {
+      "subject": {
+        "text": "He"
+      },
+      "sentence": " One morning, a prospector appeared in the couple’s camp with news far more astonishing than a new species of desert flora: He’d found a ship lodged in the rocky face of Canebrake Canyon.",
+      "object": {
+        "text": "found a ship lodged in the rocky face of Canebrake Canyon"
+      },
+      "action": {
+        "verb": {
+          "text": "’d",
+          "tense": "past"
+        },
+        "text": "’d",
+        "normalized": "’d"
+      }
+    },
+    {
+      "subject": {
+        "text": "He"
+      },
+      "sentence": " One morning, a prospector appeared in the couple’s camp with news far more astonishing than a new species of desert flora: He’d found a ship lodged in the rocky face of Canebrake Canyon.",
+      "object": {
+        "text": "a ship lodged in the rocky face of Canebrake Canyon"
+      },
+      "action": {
+        "verb": {
+          "text": "find",
+          "tense": "past"
+        },
+        "text": "d found",
+        "normalized": "d find"
+      }
+    },
+    {
+      "subject": {
+        "text": "The vessel"
+      },
+      "sentence": " The vessel was made of wood, and there was a serpentine figure carved into its prow.",
+      "object": {
+        "text": "made of wood"
+      },
+      "action": {
+        "verb": {
+          "text": "be",
+          "tense": "past"
+        },
+        "text": "was",
+        "normalized": "be"
+      }
+    },
+    {
+      "subject": {
+        "text": "The vessel"
+      },
+      "sentence": " The vessel was made of wood, and there was a serpentine figure carved into its prow.",
+      "object": {
+        "text": "of wood"
+      },
+      "action": {
+        "verb": {
+          "text": "make",
+          "tense": "past"
+        },
+        "text": "was made",
+        "normalized": "be make"
+      }
+    },
+    {
+      "subject": {
+        "text": "shields"
+      },
+      "sentence": " There were also impressions on its flanks where shields had been attached—all the hallmarks of a Viking craft.",
+      "object": {
+        "text": "been attached—all the hallmarks of a Viking craft"
+      },
+      "action": {
+        "verb": {
+          "text": "have",
+          "tense": "past"
+        },
+        "text": "had",
+        "normalized": "have"
+      }
+    },
+    {
+      "subject": {
+        "text": "shields"
+      },
+      "sentence": " There were also impressions on its flanks where shields had been attached—all the hallmarks of a Viking craft.",
+      "object": {
+        "text": "attached—all the hallmarks of a Viking craft"
+      },
+      "action": {
+        "verb": {
+          "text": "be",
+          "tense": "past"
+        },
+        "text": "had been",
+        "normalized": "have be"
+      }
+    },
+    {
+      "subject": {
+        "text": "Botts"
+      },
+      "sentence": " Recounting the episode later, Botts said she and her husband saw the ship but couldn’t reach it, so they vowed to return the following day, better prepared for a rugged hike.",
+      "object": {
+        "text": "she and her husband saw the ship but couldn’t reach it"
+      },
+      "action": {
+        "verb": {
+          "text": "say",
+          "tense": "past"
+        },
+        "text": "said",
+        "normalized": "say"
+      }
+    },
+    {
+      "subject": {
+        "text": "they"
+      },
+      "sentence": " Recounting the episode later, Botts said she and her husband saw the ship but couldn’t reach it, so they vowed to return the following day, better prepared for a rugged hike.",
+      "object": {
+        "text": "to return the following day"
+      },
+      "action": {
+        "verb": {
+          "text": "vow",
+          "tense": "past"
+        },
+        "text": "vowed",
+        "normalized": "vow"
+      }
+    },
+    {
+      "subject": {
+        "text": "they"
+      },
+      "sentence": " Recounting the episode later, Botts said she and her husband saw the ship but couldn’t reach it, so they vowed to return the following day, better prepared for a rugged hike.",
+      "action": {
+        "verb": {
+          "text": "return",
+          "tense": "future"
+        },
+        "text": "vowed to return",
+        "normalized": "vow to return"
+      }
+    },
+    {
+      "subject": {
+        "text": "That"
+      },
+      "sentence": " That wasn’t to be, because, several hours later, there was a 6.4 magnitude earthquake in the waters off Huntington Beach, in Southern California.",
+      "object": {
+        "text": "n’t"
+      },
+      "action": {
+        "verb": {
+          "text": "be",
+          "tense": "past"
+        },
+        "text": "was",
+        "normalized": "be"
+      }
+    },
+    {
+      "subject": {
+        "text": "Botts"
+      },
+      "sentence": " Botts claimed it dislodged rocks that buried her Viking ship, which she never saw again.There are reasons to doubt her story, yet it is only one of many about sightings of the desert ship.",
+      "object": {
+        "text": "it dislodged rocks that buried her Viking ship, which she never saw again.There are reasons to doubt her story, yet it is only one of many about sightings of the desert ship"
+      },
+      "action": {
+        "verb": {
+          "text": "claim",
+          "tense": "past"
+        },
+        "text": "claimed",
+        "normalized": "claim"
+      }
+    },
+    {
+      "subject": {
+        "text": "rocks"
+      },
+      "sentence": " Botts claimed it dislodged rocks that buried her Viking ship, which she never saw again.There are reasons to doubt her story, yet it is only one of many about sightings of the desert ship.",
+      "object": {
+        "text": "her Viking ship, which she never saw again.There"
+      },
+      "action": {
+        "verb": {
+          "text": "bury",
+          "tense": "past"
+        },
+        "text": "buried",
+        "normalized": "bury"
+      }
+    },
+    {
+      "subject": {
+        "text": "she"
+      },
+      "sentence": " Botts claimed it dislodged rocks that buried her Viking ship, which she never saw again.There are reasons to doubt her story, yet it is only one of many about sightings of the desert ship.",
+      "object": {
+        "text": "again.There are reasons to doubt her story"
+      },
+      "action": {
+        "verb": {
+          "text": "see",
+          "tense": "past"
+        },
+        "text": "saw",
+        "normalized": "see"
+      }
+    },
+    {
+      "subject": {
+        "text": "Myrtle and her husband"
+      },
+      "sentence": " By the time Myrtle and her husband had set out to explore, amid the blooming poppies and evening primrose, the story of the lost desert ship was already about 60 years old.",
+      "object": {
+        "text": "set out to explore"
+      },
+      "action": {
+        "verb": {
+          "text": "have",
+          "tense": "past"
+        },
+        "text": "had",
+        "normalized": "have"
+      }
+    },
+    {
+      "subject": {
+        "text": "the story of the lost desert ship"
+      },
+      "sentence": " By the time Myrtle and her husband had set out to explore, amid the blooming poppies and evening primrose, the story of the lost desert ship was already about 60 years old.",
+      "action": {
+        "verb": {
+          "text": "be",
+          "tense": "past"
+        },
+        "text": "was",
+        "normalized": "be"
+      }
+    },
+    {
+      "subject": {
+        "text": "I"
+      },
+      "sentence": " By the time I heard it, while working on a story about desert conservation, it had been nearly a century and a half since explorer Albert S. Evans had published the first account.",
+      "object": {
+        "text": "it"
+      },
+      "action": {
+        "verb": {
+          "text": "hear",
+          "tense": "past"
+        },
+        "text": "heard",
+        "normalized": "hear"
+      }
+    },
+    {
+      "subject": {
+        "text": "it"
+      },
+      "sentence": " By the time I heard it, while working on a story about desert conservation, it had been nearly a century and a half since explorer Albert S. Evans had published the first account.",
+      "action": {
+        "verb": {
+          "text": "have",
+          "tense": "past"
+        },
+        "text": "had been",
+        "normalized": "have be"
+      }
+    },
+    {
+      "subject": {
+        "text": "it"
+      },
+      "sentence": " By the time I heard it, while working on a story about desert conservation, it had been nearly a century and a half since explorer Albert S. Evans had published the first account.",
+      "object": {
+        "text": "nearly a century and a half"
+      },
+      "action": {
+        "verb": {
+          "text": "be",
+          "tense": "past"
+        },
+        "text": "had been",
+        "normalized": "have be"
+      }
+    },
+    {
+      "subject": {
+        "text": "a half since explorer Albert S. Evans"
+      },
+      "sentence": " By the time I heard it, while working on a story about desert conservation, it had been nearly a century and a half since explorer Albert S. Evans had published the first account.",
+      "object": {
+        "text": "published the first account"
+      },
+      "action": {
+        "verb": {
+          "text": "have",
+          "tense": "past"
+        },
+        "text": "had",
+        "normalized": "have"
+      }
+    },
+    {
+      "subject": {
+        "text": "a half since explorer Albert S. Evans"
+      },
+      "sentence": " By the time I heard it, while working on a story about desert conservation, it had been nearly a century and a half since explorer Albert S. Evans had published the first account.",
+      "object": {
+        "text": "the first account"
+      },
+      "action": {
+        "verb": {
+          "text": "publish",
+          "tense": "past"
+        },
+        "text": "had published",
+        "normalized": "have publish"
+      }
+    },
+    {
+      "subject": {
+        "text": "Evans"
+      },
+      "sentence": " Traveling to San Bernardino, Evans came into a valley that was “the grim and silent ghost of a dead sea,” presumably Lake Cahuilla.",
+      "object": {
+        "text": "into a valley that was “the grim and silent ghost of a dead sea,” presumably Lake Cahuilla"
+      },
+      "action": {
+        "verb": {
+          "text": "come",
+          "tense": "past"
+        },
+        "text": "came",
+        "normalized": "come"
+      }
+    },
+    {
+      "subject": {
+        "text": "a valley that"
+      },
+      "sentence": " Traveling to San Bernardino, Evans came into a valley that was “the grim and silent ghost of a dead sea,” presumably Lake Cahuilla.",
+      "object": {
+        "text": "the grim and silent ghost of a dead sea"
+      },
+      "action": {
+        "verb": {
+          "text": "be",
+          "tense": "past"
+        },
+        "text": "was",
+        "normalized": "be"
+      }
+    },
+    {
+      "subject": {
+        "text": "The moon"
+      },
+      "sentence": " “The moon threw a track of shimmering light,” he wrote, directly upon “the wreck of a gallant ship, which may have gone down there centuries ago.”The route Evans took came nowhere near Canebrake Canyon, and the ship Evans claimed to see was Spanish, not Norse.",
+      "object": {
+        "text": "a track"
+      },
+      "action": {
+        "verb": {
+          "text": "throw",
+          "tense": "past"
+        },
+        "text": "threw",
+        "normalized": "throw"
+      }
+    },
+    {
+      "subject": {
+        "text": "he"
+      },
+      "sentence": " “The moon threw a track of shimmering light,” he wrote, directly upon “the wreck of a gallant ship, which may have gone down there centuries ago.”The route Evans took came nowhere near Canebrake Canyon, and the ship Evans claimed to see was Spanish, not Norse.",
+      "object": {
+        "text": "The moon threw a track of shimmering light"
+      },
+      "action": {
+        "verb": {
+          "text": "write",
+          "tense": "past"
+        },
+        "text": "wrote",
+        "normalized": "write"
+      }
+    },
+    {
+      "subject": {
+        "text": "a gallant ship"
+      },
+      "sentence": " “The moon threw a track of shimmering light,” he wrote, directly upon “the wreck of a gallant ship, which may have gone down there centuries ago.”The route Evans took came nowhere near Canebrake Canyon, and the ship Evans claimed to see was Spanish, not Norse.",
+      "object": {
+        "text": "gone down there centuries"
+      },
+      "action": {
+        "verb": {
+          "text": "have",
+          "tense": "future"
+        },
+        "text": "have",
+        "normalized": "have"
+      }
+    },
+    {
+      "subject": {
+        "text": "Evans"
+      },
+      "sentence": " “The moon threw a track of shimmering light,” he wrote, directly upon “the wreck of a gallant ship, which may have gone down there centuries ago.”The route Evans took came nowhere near Canebrake Canyon, and the ship Evans claimed to see was Spanish, not Norse.",
+      "object": {
+        "text": "nowhere"
+      },
+      "action": {
+        "verb": {
+          "text": "come",
+          "tense": "past"
+        },
+        "text": "came",
+        "normalized": "come"
+      }
+    },
+    {
+      "subject": {
+        "text": "the ship Evans"
+      },
+      "sentence": " “The moon threw a track of shimmering light,” he wrote, directly upon “the wreck of a gallant ship, which may have gone down there centuries ago.”The route Evans took came nowhere near Canebrake Canyon, and the ship Evans claimed to see was Spanish, not Norse.",
+      "object": {
+        "text": "to see was Spanish, not Norse"
+      },
+      "action": {
+        "verb": {
+          "text": "claim",
+          "tense": "past"
+        },
+        "text": "claimed",
+        "normalized": "claim"
+      }
+    },
+    {
+      "subject": {
+        "text": "the ship Evans"
+      },
+      "sentence": " “The moon threw a track of shimmering light,” he wrote, directly upon “the wreck of a gallant ship, which may have gone down there centuries ago.”The route Evans took came nowhere near Canebrake Canyon, and the ship Evans claimed to see was Spanish, not Norse.",
+      "object": {
+        "text": "was Spanish, not Norse"
+      },
+      "action": {
+        "verb": {
+          "text": "see",
+          "tense": "future"
+        },
+        "text": "claimed to see",
+        "normalized": "claim to see"
+      }
+    },
+    {
+      "subject": {
+        "text": "Others"
+      },
+      "sentence": " Others have also seen this vessel, but much farther south, in Baja California, Mexico.",
+      "object": {
+        "text": "this vessel"
+      },
+      "action": {
+        "verb": {
+          "text": "see",
+          "tense": "past"
+        },
+        "text": "have also seen",
+        "normalized": "have also see"
+      }
+    }
+  ],
+  "language": "en",
+  "keywords": [
+    {
+      "text": "desert ship",
+      "relevance": 0.98579
+    },
+    {
+      "text": "rugged Colorado Desert",
+      "relevance": 0.929111
+    },
+    {
+      "text": "librarian Myrtle Botts",
+      "relevance": 0.922312
+    },
+    {
+      "text": "Canebrake Canyon",
+      "relevance": 0.861843
+    },
+    {
+      "text": "Desert Dunes motel",
+      "relevance": 0.856763
+    },
+    {
+      "text": "Albert S. Evans",
+      "relevance": 0.849325
+    },
+    {
+      "text": "Southern California",
+      "relevance": 0.845565
+    },
+    {
+      "text": "ancient American dreamtime",
+      "relevance": 0.83079
+    },
+    {
+      "text": "World Trade Center",
+      "relevance": 0.828227
+    },
+    {
+      "text": "treasure ship",
+      "relevance": 0.795288
+    },
+    {
+      "text": "Anza-Borrego Desert",
+      "relevance": 0.790321
+    },
+    {
+      "text": "ship Evans",
+      "relevance": 0.782791
+    },
+    {
+      "text": "Viking ship",
+      "relevance": 0.779153
+    },
+    {
+      "text": "desert flora",
+      "relevance": 0.771872
+    },
+    {
+      "text": "gallant ship",
+      "relevance": 0.767433
+    },
+    {
+      "text": "desert conservation",
+      "relevance": 0.765279
+    },
+    {
+      "text": "Hellhole Canyon",
+      "relevance": 0.752794
+    },
+    {
+      "text": "Moonlight Canyon",
+      "relevance": 0.752342
+    },
+    {
+      "text": "Spanish explorers",
+      "relevance": 0.751603
+    },
+    {
+      "text": "riotous invasion",
+      "relevance": 0.749868
+    },
+    {
+      "text": "Agua Caliente",
+      "relevance": 0.747739
+    },
+    {
+      "text": "washed-out yellows",
+      "relevance": 0.7476
+    },
+    {
+      "text": "Viking craft",
+      "relevance": 0.741184
+    },
+    {
+      "text": "wooden remains",
+      "relevance": 0.739948
+    },
+    {
+      "text": "place names",
+      "relevance": 0.738934
+    },
+    {
+      "text": "Indian Gorge.Try",
+      "relevance": 0.7386
+    },
+    {
+      "text": "route Evans",
+      "relevance": 0.737684
+    },
+    {
+      "text": "new species",
+      "relevance": 0.737257
+    },
+    {
+      "text": "rugged hike",
+      "relevance": 0.736874
+    },
+    {
+      "text": "Lake Cahuilla",
+      "relevance": 0.735257
+    },
+    {
+      "text": "weekTo enter",
+      "relevance": 0.733836
+    },
+    {
+      "text": "serpentine figure",
+      "relevance": 0.732898
+    },
+    {
+      "text": "couple’s camp",
+      "relevance": 0.731863
+    },
+    {
+      "text": "time Myrtle",
+      "relevance": 0.731354
+    },
+    {
+      "text": "magnitude earthquake",
+      "relevance": 0.730729
+    },
+    {
+      "text": "tiny settlement",
+      "relevance": 0.730188
+    },
+    {
+      "text": "untold riches",
+      "relevance": 0.728527
+    },
+    {
+      "text": "Baja California",
+      "relevance": 0.728317
+    },
+    {
+      "text": "Huntington Beach",
+      "relevance": 0.728055
+    },
+    {
+      "text": "dead sea",
+      "relevance": 0.726834
+    },
+    {
+      "text": "evening primrose",
+      "relevance": 0.726647
+    },
+    {
+      "text": "San Bernardino",
+      "relevance": 0.725582
+    },
+    {
+      "text": "creosote bush",
+      "relevance": 0.724029
+    },
+    {
+      "text": "centuries ago.",
+      "relevance": 0.723927
+    },
+    {
+      "text": "rocky face",
+      "relevance": 0.723133
+    },
+    {
+      "text": "main currencies",
+      "relevance": 0.723121
+    },
+    {
+      "text": "Black Sea",
+      "relevance": 0.723031
+    },
+    {
+      "text": "early-European explorers",
+      "relevance": 0.722897
+    },
+    {
+      "text": "vast lake",
+      "relevance": 0.722109
+    },
+    {
+      "text": "fake news",
+      "relevance": 0.721679
+    }
+  ],
+  "entities": [
+    {
+      "type": "GeographicFeature",
+      "text": "Anza-Borrego Desert",
+      "relevance": 0.888559,
+      "count": 4
+    },
+    {
+      "type": "Person",
+      "text": "Myrtle Botts",
+      "relevance": 0.764168,
+      "count": 6
+    },
+    {
+      "type": "GeographicFeature",
+      "text": "Colorado Desert",
+      "relevance": 0.586841,
+      "count": 1
+    },
+    {
+      "type": "Person",
+      "text": "Albert S. Evans",
+      "relevance": 0.532221,
+      "count": 4
+    },
+    {
+      "type": "GeographicFeature",
+      "text": "Canebrake Canyon",
+      "relevance": 0.476537,
+      "count": 2
+    },
+    {
+      "type": "GeographicFeature",
+      "text": "Desert Dunes",
+      "relevance": 0.450513,
+      "count": 1
+    },
+    {
+      "type": "Location",
+      "text": "Southern California",
+      "relevance": 0.417814,
+      "count": 2
+    },
+    {
+      "type": "Location",
+      "text": "Mexico",
+      "relevance": 0.410583,
+      "count": 2
+    },
+    {
+      "type": "GeographicFeature",
+      "text": "Moonlight Canyon",
+      "relevance": 0.379001,
+      "count": 1
+    },
+    {
+      "type": "Location",
+      "text": "California",
+      "relevance": 0.368536,
+      "count": 1
+    },
+    {
+      "type": "Company",
+      "text": "Facebook",
+      "relevance": 0.34503,
+      "disambiguation": {
+        "subtype": [
+          "Website",
+          "VentureFundedCompany"
+        ],
+        "name": "Facebook",
+        "dbpedia_resource": "http://dbpedia.org/resource/Facebook"
+      },
+      "count": 1
+    },
+    {
+      "type": "GeographicFeature",
+      "text": "Agua Caliente",
+      "relevance": 0.333943,
+      "count": 1
+    },
+    {
+      "type": "Facility",
+      "text": "World Trade Center",
+      "relevance": 0.332581,
+      "disambiguation": {
+        "subtype": [
+          "Location",
+          "BuildingComplex",
+          "Skyscraper"
+        ],
+        "name": "World Trade Center",
+        "dbpedia_resource": "http://dbpedia.org/resource/World_Trade_Center"
+      },
+      "count": 1
+    },
+    {
+      "type": "Location",
+      "text": "San Bernardino",
+      "relevance": 0.322571,
+      "disambiguation": {
+        "subtype": [
+          "PlaceWithNeighborhoods",
+          "City"
+        ],
+        "name": "San Bernardino, California",
+        "dbpedia_resource": "http://dbpedia.org/resource/San_Bernardino,_California"
+      },
+      "count": 1
+    },
+    {
+      "type": "GeographicFeature",
+      "text": "Black Sea",
+      "relevance": 0.321364,
+      "disambiguation": {
+        "subtype": [
+          "Location",
+          "BodyOfWater",
+          "Lake"
+        ],
+        "name": "Black Sea",
+        "dbpedia_resource": "http://dbpedia.org/resource/Black_Sea"
+      },
+      "count": 1
+    },
+    {
+      "type": "Location",
+      "text": "Baja California",
+      "relevance": 0.316981,
+      "count": 1
+    },
+    {
+      "type": "GeographicFeature",
+      "text": "Lake Cahuilla",
+      "relevance": 0.310636,
+      "count": 1
+    },
+    {
+      "type": "GeographicFeature",
+      "text": "Huntington Beach",
+      "relevance": 0.310455,
+      "count": 1
+    },
+    {
+      "type": "Location",
+      "text": "Manhattan",
+      "relevance": 0.308959,
+      "disambiguation": {
+        "subtype": [
+          "GeographicFeature",
+          "AdministrativeDivision",
+          "GovernmentalJurisdiction",
+          "Island",
+          "PlaceWithNeighborhoods",
+          "USCounty",
+          "City"
+        ],
+        "name": "Manhattan",
+        "dbpedia_resource": "http://dbpedia.org/resource/Manhattan"
+      },
+      "count": 1
+    },
+    {
+      "type": "Company",
+      "text": "Newsweek",
+      "relevance": 0.304619,
+      "count": 1
+    },
+    {
+      "type": "Broadcaster",
+      "text": "HBO",
+      "relevance": 0.283998,
+      "count": 1
+    }
+  ],
+  "emotion": {
+    "document": {
+      "emotion": {
+        "sadness": 0.530708,
+        "joy": 0.198117,
+        "fear": 0.516278,
+        "disgust": 0.462995,
+        "anger": 0.127806
+      }
+    }
+  },
+  "concepts": [
+    {
+      "text": "Colorado Desert",
+      "relevance": 0.949919,
+      "dbpedia_resource": "http://dbpedia.org/resource/Colorado_Desert"
+    },
+    {
+      "text": "Sonoran Desert",
+      "relevance": 0.839597,
+      "dbpedia_resource": "http://dbpedia.org/resource/Sonoran_Desert"
+    },
+    {
+      "text": "Desert",
+      "relevance": 0.7866,
+      "dbpedia_resource": "http://dbpedia.org/resource/Desert"
+    },
+    {
+      "text": "Mojave Desert",
+      "relevance": 0.69266,
+      "dbpedia_resource": "http://dbpedia.org/resource/Mojave_Desert"
+    },
+    {
+      "text": "Anza-Borrego Desert State Park",
+      "relevance": 0.670016,
+      "dbpedia_resource": "http://dbpedia.org/resource/Anza-Borrego_Desert_State_Park"
+    },
+    {
+      "text": "Imperial County, California",
+      "relevance": 0.65157,
+      "dbpedia_resource": "http://dbpedia.org/resource/Imperial_County,_California"
+    },
+    {
+      "text": "Salton Sea",
+      "relevance": 0.593492,
+      "dbpedia_resource": "http://dbpedia.org/resource/Salton_Sea"
+    },
+    {
+      "text": "Prima facie",
+      "relevance": 0.541083,
+      "dbpedia_resource": "http://dbpedia.org/resource/Prima_facie"
+    }
+  ],
+  "categories": [
+    {
+      "score": 0.587371,
+      "label": "/travel/tourist destinations/mexico and central america"
+    },
+    {
+      "score": 0.438928,
+      "label": "/home and garden"
+    },
+    {
+      "score": 0.329439,
+      "label": "/science/geology/seismology/earthquakes"
+    }
+  ],
+  "language": "en"
+  }}

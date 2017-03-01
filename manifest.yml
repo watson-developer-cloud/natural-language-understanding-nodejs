@@ -1,0 +1,6 @@
+---
+applications:
+- name: natural-language-understanding-demo
+  path: .
+  command: npm start
+  memory: 512M
