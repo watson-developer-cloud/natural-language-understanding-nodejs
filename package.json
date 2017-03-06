@@ -63,7 +63,7 @@
     "scroll-to-element": "^2.0.0",
     "tween": "^0.9.0",
     "uglifyify": "^3.0.4",
-    "watson-developer-cloud": "https://github.com/watson-developer-cloud/node-sdk/archive/v2.16.0.tar.gz",
+    "watson-developer-cloud": "^2.25.1",
     "watson-react-components": "^0.5.9",
     "watson-ui-components": "^0.6.0",
     "whatwg-fetch": "^2.0.2"
