@@ -26,7 +26,7 @@ Demo: https://natural-language-understanding-demo.mybluemix.net/
 
 1. Connect to Bluemix with the command line tool.
 
-  ```sh
+  ```bash
   cf api https://api.ng.bluemix.net
   cf login
   ```
