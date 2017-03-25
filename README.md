@@ -149,7 +149,7 @@ This data is collected from the `package.json` file in the sample application an
 
 [deploy_track_url]: https://github.com/cloudant-labs/deployment-tracker
 [cloud_foundry]: https://github.com/cloudfoundry/cli
-[getting_started]: http://www.ibm.com/watson/developercloud/doc/getting_started/
+[getting_started]: http://www.ibm.com/watson/developercloud/doc/common/index.html
 [service_url]: http://www.ibm.com/watson/developercloud/natural-language-understanding.html
 [docs]: http://www.ibm.com/watson/developercloud/natural-language-understanding/
 [sign_up]: https://console.ng.bluemix.net/registration/
