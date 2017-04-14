@@ -5,8 +5,6 @@ Natural Language Understanding is a collection of APIs that offer text analysis 
 
 [![Demo](demo.gif)](https://natural-language-understanding-demo.mybluemix.net)
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/watson-developer-cloud/natural-language-understanding-nodejs)
-
 ## Getting started
 
 1. You need a Bluemix account. If you don't have one, [sign up][sign_up].
