@@ -2,7 +2,7 @@
 declared-services:
   my-nlu-service:
     label: natural-language-understanding
-    plan: standard
+    plan: free
 
 applications:
 - name: natural-language-understanding-demo
