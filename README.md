@@ -33,7 +33,7 @@ Natural Language Understanding is a collection of APIs that offer text analysis 
 1. Create and retrieve service keys to access the [Natural Language Understanding][service_url] service:
 
   ```none
-  cf create-service natural-language-understanding standard my-nlu-service
+  cf create-service natural-language-understanding free my-nlu-service
   cf create-service-key my-nlu-service myKey
   cf service-key my-nlu-service myKey
   ```
