@@ -35,8 +35,8 @@ export const analyze = (params) =>
     headers: {'content-type': 'application/json'},
     body: JSON.stringify(params),
   })
-  .then(parseJSON)
-  .then(handleErrors);
+    .then(parseJSON)
+    .then(handleErrors);
 
 
 /**
