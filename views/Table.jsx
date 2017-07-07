@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { parser } from 'css-math';
 import { StyleSheet, css } from 'aphrodite/no-important';
 import deepAssign from 'deep-assign';
@@ -148,11 +149,11 @@ function Table(props) {
 }
 
 Table.propTypes = {
-  columns: React.PropTypes.arrayOf(React.PropTypes.string).isRequired, // string of properties
-  data: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
-  theme: React.PropTypes.object,  // styles
-  disableHeadersOnMobile: React.PropTypes.bool,
-  disableHeader: React.PropTypes.bool,
+  columns: PropTypes.arrayOf(PropTypes.string).isRequired, // string of properties
+  data: PropTypes.arrayOf(PropTypes.object).isRequired,
+  theme: PropTypes.object,  // styles
+  disableHeadersOnMobile: PropTypes.bool,
+  disableHeader: PropTypes.bool,
 };
 
 Table.defaultProps = {

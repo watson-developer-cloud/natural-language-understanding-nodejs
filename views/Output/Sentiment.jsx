@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Icon } from 'watson-react-components';
 import { StyleSheet, css } from 'aphrodite/no-important';
 import { colors } from '../utils/colors';
@@ -40,8 +41,6 @@ function getDataScore(props) {
   try {
     return props.data.document.score;
   } catch (exception) {
-    console.log(exception);
-    console.log(JSON.stringify(props));
     return 0;
   }
 }
@@ -50,11 +49,11 @@ export default React.createClass({
   displayName: 'Sentiment',
 
   propTypes: {
-    data: React.PropTypes.shape({
-      document: React.PropTypes.object,
+    data: PropTypes.shape({
+      document: PropTypes.object,
     }),
-    language: React.PropTypes.string,
-    query: React.PropTypes.object,
+    language: PropTypes.string,
+    query: PropTypes.object,
   },
 
   getInitialState() {

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import OutputTemplate from './OutputTemplate.jsx';
 import { StyleSheet, css } from 'aphrodite/no-important';
 import { colors } from '../utils/colors';
@@ -42,13 +43,15 @@ const styles = StyleSheet.create({
   },
 });
 
+const escapeRegExp = (text) => text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
+
 class SemSent extends React.Component {
   replacements() {
     let res = ['action','object','subject'].reduce((acc, item) => {
       if (this.props.data[item]) {
         let replaceText = this.props.data[item].text;
         let withText = `<span class=${css(styles.token)}><span class=${css(styles.innerToken)}> ${this.props.data[item].text}&nbsp;</span><span class='${css(styles.label)}'>${item}</span></span>`;
-        let regex = new RegExp(`\\b${replaceText}\\b`);
+        let regex = new RegExp(`\\b${escapeRegExp(replaceText)}\\b`);
         return acc.replace(regex, withText);
       } else {
         return acc;
@@ -61,7 +64,7 @@ class SemSent extends React.Component {
   }
 }
 SemSent.propTypes = {
-  data: React.PropTypes.object,
+  data: PropTypes.object,
 };
 
 class SemSentences extends React.Component {
@@ -71,15 +74,15 @@ class SemSentences extends React.Component {
 }
 
 SemSentences.propTypes = {
-  data: React.PropTypes.array,
+  data: PropTypes.array,
 };
 
 export default React.createClass({
   displayName: 'SemanticRoles',
 
   propTypes: {
-    data: React.PropTypes.array,
-    language: React.PropTypes.string,
+    data: PropTypes.array,
+    language: PropTypes.string,
   },
 
   getInitialState() {

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Icon, Colors, Code } from 'watson-react-components';
 import { z } from './utils/zIndices.js';
 import { breakpoint, breakpointsObj as bp } from './utils/breakpoints';
@@ -139,18 +140,18 @@ export default function JsonLink(props) {
 }
 
 JsonLink.propTypes = {
-  json: React.PropTypes.oneOfType([
-    React.PropTypes.string,
-    React.PropTypes.object,
+  json: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object,
   ]).isRequired,
-  children: React.PropTypes.oneOfType([
-    React.PropTypes.element,
-    React.PropTypes.arrayOf(React.PropTypes.element),
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element),
   ]),
-  showJson: React.PropTypes.bool,
-  onExit: React.PropTypes.func,
-  onShow: React.PropTypes.func,
-  description: React.PropTypes.element,
+  showJson: PropTypes.bool,
+  onExit: PropTypes.func,
+  onShow: PropTypes.func,
+  description: PropTypes.element,
 };
 
 JsonLink.defaultProps = {

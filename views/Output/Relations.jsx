@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { StyleSheet, css } from 'aphrodite/no-important';
 import OutputTemplate from './OutputTemplate.jsx';
 import { breakpoint, breakpointsObj as bp } from '../utils/breakpoints';
@@ -95,8 +96,8 @@ function RelationSentence(props) {
 }
 
 RelationSentence.propTypes = {
-  sentence: React.PropTypes.string,
-  arguments: React.PropTypes.array,
+  sentence: PropTypes.string,
+  arguments: PropTypes.array,
 };
 
 function Relations(props) {
@@ -123,14 +124,14 @@ function Relations(props) {
 }
 
 Relations.propTypes = {
-  data: React.PropTypes.oneOfType([
-    React.PropTypes.array,
-    React.PropTypes.object
+  data: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.object
   ]),
-  language: React.PropTypes.string,
-  showJson: React.PropTypes.bool,
-  onExitJson: React.PropTypes.func,
-  onShowJson: React.PropTypes.func,
+  language: PropTypes.string,
+  showJson: PropTypes.bool,
+  onExitJson: PropTypes.func,
+  onShowJson: PropTypes.func,
 };
 
 export default Relations;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Icon } from 'watson-react-components';
 import { StyleSheet, css } from 'aphrodite/no-important';
 
@@ -41,7 +42,7 @@ function MoreInput(props) {
 }
 
 MoreInput.propTypes = {
-  onSubmit: React.PropTypes.func,
+  onSubmit: PropTypes.func,
 };
 
 MoreInput.defaultProps = {
