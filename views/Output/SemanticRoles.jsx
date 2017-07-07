@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import OutputTemplate from './OutputTemplate.jsx';
 import { StyleSheet, css } from 'aphrodite/no-important';
 import { colors } from '../utils/colors';
@@ -61,7 +62,7 @@ class SemSent extends React.Component {
   }
 }
 SemSent.propTypes = {
-  data: React.PropTypes.object,
+  data: PropTypes.object,
 };
 
 class SemSentences extends React.Component {
@@ -71,15 +72,15 @@ class SemSentences extends React.Component {
 }
 
 SemSentences.propTypes = {
-  data: React.PropTypes.array,
+  data: PropTypes.array,
 };
 
 export default React.createClass({
   displayName: 'SemanticRoles',
 
   propTypes: {
-    data: React.PropTypes.array,
-    language: React.PropTypes.string,
+    data: PropTypes.array,
+    language: PropTypes.string,
   },
 
   getInitialState() {

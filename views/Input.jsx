@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import lang from 'language-list';
 import { parser } from 'css-math';
 import { StyleSheet, css } from 'aphrodite/no-important';
@@ -80,16 +81,16 @@ const Input = React.createClass({
   displayName: 'Input',
 
   propTypes: {
-    text: React.PropTypes.string.isRequired,
-    url: React.PropTypes.string.isRequired,
-    language: React.PropTypes.string,
-    disableButton: React.PropTypes.bool,
-    onSubmit: React.PropTypes.func,
-    onTabChange: React.PropTypes.func,
-    onInputChange: React.PropTypes.func,
-    error: React.PropTypes.shape({
-      error: React.PropTypes.string,
-      code: React.PropTypes.number,
+    text: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
+    language: PropTypes.string,
+    disableButton: PropTypes.bool,
+    onSubmit: PropTypes.func,
+    onTabChange: PropTypes.func,
+    onInputChange: PropTypes.func,
+    error: PropTypes.shape({
+      error: PropTypes.string,
+      code: PropTypes.number,
     }),
   },
 

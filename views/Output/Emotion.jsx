@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Icon } from 'watson-react-components';
 import { StyleSheet, css } from 'aphrodite/no-important';
 import OutputTemplate from './OutputTemplate.jsx';
@@ -76,22 +77,22 @@ function EmotionTable(props) {
 }
 
 EmotionTable.propTypes = {
-  theme: React.PropTypes.oneOfType([
-    React.PropTypes.func,
-    React.PropTypes.object,
+  theme: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.object,
   ]),
-  emotion: React.PropTypes.object,
+  emotion: PropTypes.object,
 };
 
 export default React.createClass({
   displayName: 'Emotion',
 
   propTypes: {
-    data: React.PropTypes.shape({
-      document: React.PropTypes.object,
+    data: PropTypes.shape({
+      document: PropTypes.object,
     }),
-    language: React.PropTypes.string,
-    query: React.PropTypes.object,
+    language: PropTypes.string,
+    query: PropTypes.object,
   },
 
   getInitialState() {

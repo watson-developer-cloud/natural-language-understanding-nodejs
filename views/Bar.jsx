@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import numeral from 'numeral';
 import map from 'map-range';
 import { parser } from 'css-math';
@@ -58,10 +59,10 @@ function Bar(props) {
 }
 
 Bar.propTypes = {
-  score: React.PropTypes.number,  // percentage number from 0 - 100
-  withScore: React.PropTypes.bool,  // show score or not
-  rangeStart: React.PropTypes.number,
-  rangeEnd: React.PropTypes.number,
+  score: PropTypes.number,  // percentage number from 0 - 100
+  withScore: PropTypes.bool,  // show score or not
+  rangeStart: PropTypes.number,
+  rangeEnd: PropTypes.number,
 };
 
 Bar.defaultProps = {

@@ -2,25 +2,23 @@
 
 Natural Language Understanding is a collection of APIs that offer text analysis through natural language processing. This set of APIs can analyze text to help you understand its concepts, entities, keywords, sentiment, and more. Additionally, you can create a custom model for some APIs to get specific results that are tailored to your domain.
 
-
 [![Demo](demo.gif)](https://natural-language-understanding-demo.mybluemix.net)
 
 ## Deploy the application using the Deploy to Bluemix button
-Clicking on the button below creates a Bluemix DevOps Toolchain and deploys this application to Bluemix. The `manifest.yml` file [included in the repo] is parsed to obtain the name of the application, configuration details, and the list of services that should be provisioned. For further details on the structure of the `manifest.yml` file, see the [Cloud Foundry documentation](https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html#minimal-manifest).
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/watson-developer-cloud/natural-language-understanding-nodejs.git)
+Clicking on the button below creates a Bluemix DevOps Toolchain and deploys this application to Bluemix.
 
-Once deployment to Bluemix is completed, you can access the route assigned to your application using the web browser of your choice (e.g., Chrome, FireFox, etc.).
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/devops/setup/deploy?repository=https://github.com/watson-developer-cloud/natural-language-understanding-nodejs.git)
 
 ## Getting started
 
 1. You need a Bluemix account. If you don't have one, [sign up][sign_up].
 
-1. Download and install the [Cloud-foundry CLI][cloud_foundry] tool if you haven't already.
+2. Download and install the [Cloud-foundry CLI][cloud_foundry] tool if you haven't already.
 
-1. Edit the `manifest.yml` file and change `<application-name>` to something unique. The name you use determines the URL of your application. For example, `<application-name>.mybluemix.net`.
+3. Edit the `manifest.yml` file and change `<application-name>` to something unique. The name you use determines the URL of your application. For example, `<application-name>.mybluemix.net`.
 
-  ```yaml
+  ```yml
   applications:
   - services:
     - my-service-instance
@@ -30,14 +28,14 @@ Once deployment to Bluemix is completed, you can access the route assigned to yo
     memory: 512M
   ```
 
-1. Connect to Bluemix with the command line tool.
+4. Connect to Bluemix with the command line tool.
 
   ```bash
   cf api https://api.ng.bluemix.net
   cf login
   ```
 
-1. Create and retrieve service keys to access the [Natural Language Understanding][service_url] service:
+5. Create and retrieve service keys to access the [Natural Language Understanding][service_url] service:
 
   ```none
   cf create-service natural-language-understanding free my-nlu-service
@@ -45,7 +43,7 @@ Once deployment to Bluemix is completed, you can access the route assigned to yo
   cf service-key my-nlu-service myKey
   ```
 
-1. Create a `.env` file in the root directory by copying the sample `.env.example` file using the following command:
+6. Create a `.env` file in the root directory by copying the sample `.env.example` file using the following command:
 
   ```none
   cp .env.example .env
@@ -59,21 +57,21 @@ Once deployment to Bluemix is completed, you can access the route assigned to yo
   NATURAL_LANGUAGE_UNDERSTANDING_PASSWORD=<password>
   ```
 
-1. Install the dependencies you application need:
+7. Install the dependencies you application need:
 
   ```none
   npm install
   ```
 
-1. Start the application locally:
+8. Start the application locally:
 
   ```none
   npm start
   ```
 
-1. Point your browser to [http://localhost:3000](http://localhost:3000).
+9. Point your browser to [http://localhost:3000](http://localhost:3000).
 
-1. **Optional:** Push the application to Bluemix:
+10. **Optional:** Push the application to Bluemix:
 
   ```none
   cf push
@@ -83,9 +81,7 @@ After completing the steps above, you are ready to test your application. Start 
 
             <your application name>.mybluemix.net
 
-
 For more details about developing applications that use Watson Developer Cloud services in Bluemix, see [Getting started with Watson Developer Cloud and Bluemix][getting_started].
-
 
 ## Troubleshooting
 
@@ -96,7 +92,6 @@ For more details about developing applications that use Watson Developer Cloud s
   ```
 
 * For more details about the service, see the [documentation][docs] for the Natural Language Understanding service.
-
 
 ----
 
@@ -119,13 +114,12 @@ For more details about developing applications that use Watson Developer Cloud s
 ### Running in Docker
 
 You'll need to update the `docker.env` file to contain the username, password, and (optionally) the URL
-for the NLU service.  
+for the NLU service.
 
 ```bash
-$ docker build .
-$ docker run -P --env-file docker.env <IMAGEID>
+docker build .
+docker run -P --env-file docker.env <IMAGEID>
 ```
-
 
 ## License
 
@@ -136,6 +130,7 @@ $ docker run -P --env-file docker.env <IMAGEID>
   See [CONTRIBUTING](CONTRIBUTING.md).
 
 ## Open Source @ IBM
+
   Find more open source projects on the [IBM Github Page](http://ibm.github.io/)
 
 ## Privacy Notice
@@ -158,4 +153,4 @@ This data is collected from the `package.json` file in the sample application an
 [getting_started]: http://www.ibm.com/watson/developercloud/doc/common/index.html
 [service_url]: http://www.ibm.com/watson/developercloud/natural-language-understanding.html
 [docs]: http://www.ibm.com/watson/developercloud/natural-language-understanding/
-[sign_up]: https://console.ng.bluemix.net/registration/
+[sign_up]: https://console.bluemix.net/registration/

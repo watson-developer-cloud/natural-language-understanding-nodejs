@@ -31,7 +31,7 @@ module.exports = function (app) {
       code: err.code || 500,
       error: err.error || err.message,
     };
-    console.log(error);
+    console.log(error); // eslint-disable-line
     res.status(error.code).json(error);
   });
 };

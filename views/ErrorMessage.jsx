@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Alert } from 'watson-react-components';
 
 const capitalize = (string) => string.charAt(0).toUpperCase() + string.slice(1);
@@ -6,9 +7,9 @@ const capitalize = (string) => string.charAt(0).toUpperCase() + string.slice(1);
 export default React.createClass({
   displayName: 'ErrorMessage',
   propTypes: {
-    error: React.PropTypes.shape({
-      error: React.PropTypes.string,
-      code: React.PropTypes.number,
+    error: PropTypes.shape({
+      error: PropTypes.string,
+      code: PropTypes.number,
     }),
   },
   render() {

@@ -15,7 +15,7 @@
 */
 
 if (!process.env.NATURAL_LANGUAGE_UNDERSTANDING_USERNAME) {
-  console.log('Skipping integration tests because NATURAL_LANGUAGE_UNDERSTANDING_USERNAME is null');
+  console.log('Skipping integration tests because NATURAL_LANGUAGE_UNDERSTANDING_USERNAME is null'); // eslint-disable-line
   process.exit(0);
 }
 
@@ -27,7 +27,7 @@ const app = require('./app');
 const port = 3000;
 
 const server = app.listen(port, () => {
-  console.log('Server running on port: %d', port);
+  console.log('Server running on port: %d', port);  // eslint-disable-line
 
   function kill(code) {
     server.close(() => {
@@ -40,7 +40,7 @@ const server = app.listen(port, () => {
     casper.stdout.pipe(process.stdout);
 
     casper.on('error', (error) => {
-      console.log(`ERROR: ${error}`);
+      console.log(`ERROR: ${error}`);  // eslint-disable-line
       server.close(() => {
         process.exit(1);
       });

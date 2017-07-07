@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import OutputTemplate from './OutputTemplate.jsx';
 import { breakpoint, breakpointsObj as bp } from '../utils/breakpoints';
 import { colors } from '../utils/colors';
@@ -44,11 +45,11 @@ export default React.createClass({
   displayName: 'Concept',
 
   propTypes: {
-    data: React.PropTypes.arrayOf(React.PropTypes.shape({
-      text: React.PropTypes.string,
-      relevance: React.PropTypes.number
+    data: PropTypes.arrayOf(PropTypes.shape({
+      text: PropTypes.string,
+      relevance: PropTypes.number
     })),
-    language: React.PropTypes.string,
+    language: PropTypes.string,
   },
 
   getInitialState() {

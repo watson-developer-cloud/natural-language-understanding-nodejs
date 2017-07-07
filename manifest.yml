@@ -1,9 +1,3 @@
----
-declared-services:
-  my-nlu-service:
-    label: natural-language-understanding
-    plan: free
-
 applications:
 - name: natural-language-understanding-demo
   path: .

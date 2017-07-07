@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { StyleSheet, css } from 'aphrodite/no-important';
 import JsonLink from '../JsonLink.jsx';
 
@@ -26,17 +27,17 @@ function OutputTemplate(props) {
 }
 
 OutputTemplate.propTypes = {
-  showJson: React.PropTypes.bool,
-  onExitJson: React.PropTypes.func,
-  onShowJson: React.PropTypes.func,
-  description: React.PropTypes.element,
-  data: React.PropTypes.oneOfType([
-    React.PropTypes.array,
-    React.PropTypes.object,
+  showJson: PropTypes.bool,
+  onExitJson: PropTypes.func,
+  onShowJson: PropTypes.func,
+  description: PropTypes.element,
+  data: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.object,
   ]),
-  children: React.PropTypes.oneOfType([
-    React.PropTypes.arrayOf(React.PropTypes.node),
-    React.PropTypes.node
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
   ]),
 };
 

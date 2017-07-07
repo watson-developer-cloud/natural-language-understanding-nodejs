@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { StyleSheet, css } from 'aphrodite/no-important';
 import { Tabs, Pane, Icon } from 'watson-react-components';
 import Sentiment from './Sentiment.jsx';
@@ -92,10 +93,10 @@ function Output(props) {
 }
 
 Output.propTypes = {
-  data: React.PropTypes.object,
-  loading: React.PropTypes.bool,
-  query: React.PropTypes.object,
-  language: React.PropTypes.string,
+  data: PropTypes.object,
+  loading: PropTypes.bool,
+  query: PropTypes.object,
+  language: PropTypes.string,
 };
 
 export default Output;
