@@ -43,13 +43,15 @@ const styles = StyleSheet.create({
   },
 });
 
+const escapeRegExp = (text) => text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
+
 class SemSent extends React.Component {
   replacements() {
     let res = ['action','object','subject'].reduce((acc, item) => {
       if (this.props.data[item]) {
         let replaceText = this.props.data[item].text;
         let withText = `<span class=${css(styles.token)}><span class=${css(styles.innerToken)}> ${this.props.data[item].text}&nbsp;</span><span class='${css(styles.label)}'>${item}</span></span>`;
-        let regex = new RegExp(`\\b${replaceText}\\b`);
+        let regex = new RegExp(`\\b${escapeRegExp(replaceText)}\\b`);
         return acc.replace(regex, withText);
       } else {
         return acc;
