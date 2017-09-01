@@ -175,5 +175,5 @@ const colors = {
 
 export {
   palette,
-  colors
+  colors,
 };

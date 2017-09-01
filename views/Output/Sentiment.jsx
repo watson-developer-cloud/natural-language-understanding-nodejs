@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Icon } from 'watson-react-components';
 import { StyleSheet, css } from 'aphrodite/no-important';
+import scrollToElement from 'scroll-to-element';
 import { colors } from '../utils/colors';
 import { weight } from '../utils/typography';
 import Table from '../Table.jsx';
@@ -10,7 +11,6 @@ import MoreInput from './MoreInput.jsx';
 import OutputTemplate from './OutputTemplate.jsx';
 import ErrorMessage from '../ErrorMessage.jsx';
 import { targetedLoading } from '../utils/variables';
-import scrollToElement from 'scroll-to-element';
 import { analyze } from '../utils/request';
 
 const styles = StyleSheet.create({
@@ -25,7 +25,7 @@ const tableTheme = {
     ':first-child': {
       color: colors.PRIMARY_LIGHT,
       fontWeight: weight.MEDIUM,
-    }
+    },
   },
   cell_two: {
     ':first-child': {
@@ -33,7 +33,7 @@ const tableTheme = {
         color: colors.PRIMARY_LIGHT,
         fontWeight: weight.MEDIUM,
       },
-    }
+    },
   },
 };
 
@@ -76,31 +76,31 @@ export default React.createClass({
     const query = Object.assign({}, this.props.query, {
       features: {
         sentiment: {
-          targets: this.state.targets
-        }
-      }
+          targets: this.state.targets,
+        },
+      },
     });
 
     analyze(query)
-    .then(json =>
-      this.setState({ targetData: json.results.sentiment.targets, loading: false, error: null})
-    )
-    .catch((error) => this.setState({ error, loading: false }))
-    .then(() =>
-      setTimeout(() => { scrollToElement('#anchor-target-sentiment', { duration: 300 }, 100); }, 0)
-    );
+      .then(json =>
+        this.setState({ targetData: json.results.sentiment.targets, loading: false, error: null }),
+      )
+      .catch(error => this.setState({ error, loading: false }))
+      .then(() =>
+        setTimeout(() => { scrollToElement('#anchor-target-sentiment', { duration: 300 }, 100); }, 0),
+      );
   },
 
   toggleJson() {
-    this.setState({'showJson' :!this.state.showJson});
+    this.setState({ showJson: !this.state.showJson });
   },
 
   render() {
     return (
       <div>
         <OutputTemplate
-          description={<p className="base--p_small">Review the overall <a href="https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/#sentiment" target="_blank">sentiment</a> and targeted sentiment of the content.</p>}
-          data={{ sentiment: this.props.data}}
+          description={<p className="base--p_small">Review the overall <a href="https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/#sentiment" target="_blank" rel="noopener noreferrer">sentiment</a> and targeted sentiment of the content.</p>}
+          data={{ sentiment: this.props.data }}
           showJson={this.state.showJson}
           onExitJson={this.toggleJson}
           onShowJson={this.toggleJson}
@@ -117,11 +117,14 @@ export default React.createClass({
                 }]}
                 disableHeader
               />
-              <div id="anchor-target-sentiment" style={{marginTop: '0rem'}}></div>
+              <div id="anchor-target-sentiment" style={{ marginTop: '0rem' }} />
               <h4>Targeted Sentiment</h4>
               <MoreInput onSubmit={this.onTargetSubmit} />
-              {(this.state.error && !this.state.loading) ? <ErrorMessage error={this.state.error}/> : null}
-              {(this.state.loading && !this.state.error) ? <div className={css(styles.loading)}><Icon type="loader" size="large" /></div> : null}
+              {(this.state.error && !this.state.loading) ?
+                <ErrorMessage error={this.state.error} /> : null}
+              {(this.state.loading && !this.state.error) ?
+                <div className={css(styles.loading)}><Icon type="loader" size="large" /></div> :
+                null}
               {this.state.targetData ? (
                 this.state.targetData.reverse().map((target, i) => (
                   <div key={`${target.text}-${i}`}>
@@ -135,7 +138,7 @@ export default React.createClass({
                       }]}
                       disableHeader
                     />
-                  </div>)
+                  </div>),
                 )) : null
               }
             </div>
@@ -145,5 +148,5 @@ export default React.createClass({
         </OutputTemplate>
       </div>
     );
-  }
+  },
 });

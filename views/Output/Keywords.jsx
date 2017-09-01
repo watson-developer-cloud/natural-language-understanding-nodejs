@@ -38,8 +38,8 @@ const tableTheme = {
     ':first-child': {
       fontWeight: weight.MEDIUM,
       color: colors.COOL_GRAY,
-    }
-  }
+    },
+  },
 };
 
 export default React.createClass({
@@ -48,7 +48,7 @@ export default React.createClass({
   propTypes: {
     data: PropTypes.arrayOf(PropTypes.shape({
       text: PropTypes.string,
-      relevance: PropTypes.number
+      relevance: PropTypes.number,
     })),
     language: PropTypes.string,
   },
@@ -56,12 +56,12 @@ export default React.createClass({
   getInitialState() {
     return {
       showJson: false,
-      visibleItems : 10,
+      visibleItems: 10,
     };
   },
 
   toggleJson() {
-    this.setState({'showJson' :!this.state.showJson});
+    this.setState({ showJson: !this.state.showJson });
   },
 
   onWaypoint() {
@@ -78,7 +78,7 @@ export default React.createClass({
     return (
       <div>
         <OutputTemplate
-          description={<p className="base--p_small">Determine important <a href="https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/#keywords" target="_blank">keywords</a> ranked by relevance.</p>}
+          description={<p className="base--p_small">Determine important <a href="https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/#keywords" target="_blank" rel="noopener noreferrer">keywords</a> ranked by relevance.</p>}
           data={{ keywords: this.props.data }}
           showJson={this.state.showJson}
           onExitJson={this.toggleJson}
@@ -89,9 +89,9 @@ export default React.createClass({
               <Table
                 columns={['Text', 'Relevance']}
                 theme={tableTheme}
-                data={this.props.data.map((item) => ({
+                data={this.props.data.map(item => ({
                   Text: item.text,
-                  Relevance: <Bar score={item.relevance} />
+                  Relevance: <Bar score={item.relevance} />,
                 })).filter((val, i) => i <= this.state.visibleItems)}
               />
               <Waypoint onEnter={this.onWaypoint} />
@@ -100,7 +100,7 @@ export default React.createClass({
             <p>{`No Keywords results returned for ${this.props.language} input.`}</p>
           )}
         </OutputTemplate>
-    </div>
+      </div>
     );
-  }
+  },
 });

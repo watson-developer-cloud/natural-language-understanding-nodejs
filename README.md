@@ -150,7 +150,7 @@ This data is collected from the `package.json` file in the sample application an
 
 [deploy_track_url]: https://github.com/cloudant-labs/deployment-tracker
 [cloud_foundry]: https://github.com/cloudfoundry/cli
-[getting_started]: http://www.ibm.com/watson/developercloud/doc/common/index.html
-[service_url]: http://www.ibm.com/watson/developercloud/natural-language-understanding.html
-[docs]: http://www.ibm.com/watson/developercloud/natural-language-understanding/
+[getting_started]: https://console.bluemix.net/docs/services/watson/index.html
+[service_url]: https://www.ibm.com/watson/services/natural-language-understanding/
+[docs]: https://console.bluemix.net/docs/services/natural-language-understanding/getting-started.html
 [sign_up]: https://console.bluemix.net/registration/

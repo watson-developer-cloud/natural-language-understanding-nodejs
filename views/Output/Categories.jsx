@@ -29,7 +29,7 @@ const tableTheme = {
     ':first-child': {
       fontWeight: weight.MEDIUM,
       color: colors.COOL_GRAY,
-    }
+    },
   },
   cell_two: {
     marginBottom: '0.5rem',
@@ -54,7 +54,7 @@ export default React.createClass({
   propTypes: {
     data: PropTypes.arrayOf(PropTypes.shape({
       label: PropTypes.string,
-      score: PropTypes.number
+      score: PropTypes.number,
     })),
     language: PropTypes.string,
   },
@@ -66,14 +66,14 @@ export default React.createClass({
   },
 
   toggleJson() {
-    this.setState({'showJson' :!this.state.showJson});
+    this.setState({ showJson: !this.state.showJson });
   },
 
   render() {
     return (
       <div>
         <OutputTemplate
-          description={<p className="base--p_small">Classify content into a <a href="https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/#categories" target="_blank">hierarchy</a> that's five levels deep with a score.</p>}
+          description={<p className="base--p_small">Classify content into a <a href="https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/#categories" target="_blank" rel="noopener noreferrer">hierarchy</a> that&apos;s five levels deep with a score.</p>}
           data={{ categories: this.props.data }}
           showJson={this.state.showJson}
           onExitJson={this.toggleJson}
@@ -85,9 +85,9 @@ export default React.createClass({
               columns={['Hierarchy', 'Score']}
               theme={tableTheme}
               data={this.props.data.reduce((acc, item) => {
-                acc.push({'Hierarchy': item.label.split('/').join(' / '), 'Score': <Bar score={item.score}/>});
+                acc.push({ Hierarchy: item.label.split('/').join(' / '), Score: <Bar score={item.score} /> });
                 return acc;
-              },[])}
+              }, [])}
             />
           ) : (
             <p>{`No Categories results returned for ${this.props.language} input.`}</p>
@@ -95,5 +95,5 @@ export default React.createClass({
         </OutputTemplate>
       </div>
     );
-  }
+  },
 });

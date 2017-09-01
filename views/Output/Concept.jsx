@@ -37,8 +37,8 @@ const tableTheme = {
     ':first-child': {
       fontWeight: weight.MEDIUM,
       color: colors.COOL_GRAY,
-    }
-  }
+    },
+  },
 };
 
 export default React.createClass({
@@ -47,7 +47,7 @@ export default React.createClass({
   propTypes: {
     data: PropTypes.arrayOf(PropTypes.shape({
       text: PropTypes.string,
-      relevance: PropTypes.number
+      relevance: PropTypes.number,
     })),
     language: PropTypes.string,
   },
@@ -59,14 +59,14 @@ export default React.createClass({
   },
 
   toggleJson() {
-    this.setState({'showJson' :!this.state.showJson});
+    this.setState({ showJson: !this.state.showJson });
   },
 
   render() {
     return (
       <div>
         <OutputTemplate
-          description={<p className="base--p_small">Identifies general <a href="https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/#concepts" target="_blank">concepts</a> that may not be directly referenced in the text.</p>}
+          description={<p className="base--p_small">Identifies general <a href="https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/#concepts" target="_blank" rel="noopener noreferrer">concepts</a> that may not be directly referenced in the text.</p>}
           data={{ concepts: this.props.data }}
           showJson={this.state.showJson}
           onExitJson={this.toggleJson}
@@ -76,9 +76,9 @@ export default React.createClass({
             <Table
               columns={['Concept', 'Score']}
               theme={tableTheme}
-              data={this.props.data.map((item) => {
-                return { Concept: item.text, Score: <Bar score={item.relevance} /> };
-              })}
+              data={this.props.data.map(item =>
+                ({ Concept: item.text, Score: <Bar score={item.relevance} /> }))
+              }
             />
           ) : (
             <p>{`No Concept results returned for ${this.props.language} input.`}</p>
@@ -86,5 +86,5 @@ export default React.createClass({
         </OutputTemplate>
       </div>
     );
-  }
+  },
 });

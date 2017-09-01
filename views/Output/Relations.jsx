@@ -45,7 +45,7 @@ const tableTheme = {
     ':nth-of-type(3)': {
       fontWeight: weight.MEDIUM,
       color: colors.COOL_GRAY,
-    }
+    },
   },
   cell_two: {
     ':first-child': {
@@ -68,21 +68,20 @@ const tableTheme = {
   },
   inner_two: {
     width: 'calc(100% - 8rem)',
-  }
+  },
 };
 
 function RelationSentence(props) {
-  let reorderArgs = props.arguments.map((arg) => {
-    return arg.entities.map((ent) => {
-      return {
+  const reorderArgs = props.arguments.map(arg =>
+    arg.entities.map(ent =>
+      ({
         'Relation 1': arg.text,
-        'Type': ent.type,
-        'Relation 2': ent.text
-      };
-    });
-  });
+        Type: ent.type,
+        'Relation 2': ent.text,
+      }),
+    ));
 
-  let result = [].concat.apply([], reorderArgs);
+  const result = [].concat.spread([], reorderArgs);
   return (
     <div>
       <p className={css(styles.sentence)}>{props.sentence}</p>
@@ -97,41 +96,54 @@ function RelationSentence(props) {
 
 RelationSentence.propTypes = {
   sentence: PropTypes.string,
-  arguments: PropTypes.array,
+  arguments: PropTypes.arrayOf,
 };
 
-function Relations(props) {
+RelationSentence.defaultProps = {
+  sentence: null,
+  arguments: [],
+};
 
-  return (
-    <div>
-      <OutputTemplate
-        description={<p className="base--p_small">View <a href="https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/#relations" target="_blank">relations</a> between different entities.</p>}
-        data={props.data}
-        showJson={props.showJson}
-        onExitJson={props.onExitJson}
-        onShowJson={props.onShowJson}
-      >
-        {props.data && props.data.length > 0 ? (
-          <div>
-            {props.data.map((relation) => <RelationSentence sentence={relation.sentence} arguments={relation.arguments} />)}
-          </div>
-        ) : (
-          <p>{`No Relations results returned for ${props.language} input.`}</p>
-        )}
-      </OutputTemplate>
-    </div>
-  );
-}
+const Relations = props => (
+  <div>
+    <OutputTemplate
+      description={<p className="base--p_small">View <a href="https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/#relations" target="_blank" rel="noopener noreferrer">relations</a> between different entities.</p>}
+      data={props.data}
+      showJson={props.showJson}
+      onExitJson={props.onExitJson}
+      onShowJson={props.onShowJson}
+    >
+      {props.data && props.data.length > 0 ? (
+        <div>
+          {props.data.map(relation => (<RelationSentence
+            sentence={relation.sentence}
+            arguments={relation.arguments}
+          />))}
+        </div>
+      ) : (
+        <p>{`No Relations results returned for ${props.language} input.`}</p>
+      )}
+    </OutputTemplate>
+  </div>
+);
 
 Relations.propTypes = {
   data: PropTypes.oneOfType([
     PropTypes.array,
-    PropTypes.object
+    PropTypes.object,
   ]),
   language: PropTypes.string,
   showJson: PropTypes.bool,
   onExitJson: PropTypes.func,
   onShowJson: PropTypes.func,
+};
+
+Relations.defaultProps = {
+  data: null,
+  language: 'en',
+  showJson: false,
+  onExitJson: () => {},
+  onShowJson: () => {},
 };
 
 export default Relations;

@@ -1,3 +1,4 @@
+import fetch from 'isomorphic-fetch';
 
 const FEATURES = {
   features: {
@@ -8,11 +9,11 @@ const FEATURES = {
     emotion: {},
     sentiment: {},
     semantic_roles: {},
-  }
+  },
 };
 
 
-const parseJSON = (response) => {
+const parseJSON = (response) => { // eslint-disable-line
   return response.json();
 };
 
@@ -24,15 +25,15 @@ const handleErrors = (response) => {
 };
 
 /**
- * Calls the NLU /analyze endpoint 
+ * Calls the NLU /analyze endpoint
  *
  * @param  {Object} params The parameters
  * @return {Promise}       The request promise
  */
-export const analyze = (params) =>
+export const analyze = params =>
   fetch('/api/analyze', {
     method: 'POST',
-    headers: {'content-type': 'application/json'},
+    headers: { 'content-type': 'application/json' },
     body: JSON.stringify(params),
   })
     .then(parseJSON)
