@@ -40,12 +40,12 @@ const styles = StyleSheet.create({
     marginTop: '0rem',
     verticalAlign: 'right',
     fontSize: '0.8rem',
-  }
+  },
 });
 
 function Bar(props) {
-  let mapped = map((x) => x, props.rangeStart, props.rangeEnd, 0, 1);
-  return ( props.withScore ?
+  const mapped = map(x => x, props.rangeStart, props.rangeEnd, 0, 1);
+  return (props.withScore ?
     <div className={css(styles.container)}>
       <div className={css(styles.fullBar)}>
         <div className={css(styles.bar)} style={{ width: `${Math.round(mapped(props.score) * 100)}%` }} />
@@ -59,8 +59,8 @@ function Bar(props) {
 }
 
 Bar.propTypes = {
-  score: PropTypes.number,  // percentage number from 0 - 100
-  withScore: PropTypes.bool,  // show score or not
+  score: PropTypes.number, // percentage number from 0 - 100
+  withScore: PropTypes.bool, // show score or not
   rangeStart: PropTypes.number,
   rangeEnd: PropTypes.number,
 };

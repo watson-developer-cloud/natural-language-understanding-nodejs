@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 import lang from 'language-list';
 import { parser } from 'css-math';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import ErrorMessage from './ErrorMessage.jsx';
 import { Tabs, Pane } from 'watson-react-components';
+import ErrorMessage from './ErrorMessage.jsx';
 import { colors } from './utils/colors';
 import { weight, size } from './utils/typography';
 import { breakpoint } from './utils/breakpoints';
 import { MAX_CONTENT_WIDTH } from './utils/variables';
 
-let languages = lang();
+const languages = lang();
 let index = 0;
 let currentInput;
 const buttonBreakpoint = '400px';
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     ':focus': {
       border: 'none',
       outline: 'none',
-    }
+    },
   },
   buttonContainer: {
     display: 'block',
@@ -114,45 +114,60 @@ const Input = React.createClass({
     currentInput = index === 0 ? this.state.text : this.state.url;
     this.props.onSubmit(currentInput);
   },
-  
+
   render() {
     return (
       <div className={css(styles.container)}>
         <h3 className={css(styles.header)}>Examine a news article or other content</h3>
-        <Tabs selected={index} onChange={(i) => {
-          index = i;
-          this.props.onTabChange.call(this);
-        }}>
+        <Tabs
+          selected={index}
+          onChange={(i) => {
+            index = i;
+            this.props.onTabChange.call(this);
+          }}
+        >
           <Pane label="Text">
             {/* hack to render textarea properly */}
-            <div style={{visibility:'hidden', margin: '0rem 0rem -1rem', height: '0rem', overflow: 'hidden'}}></div>
-            <textarea className={css(styles.textarea)} defaultValue={this.state.text} rows="7" onChange={(e) => {
-              this.setState({ text: e.target.value });
-              this.props.onInputChange.call(this,e);
-            }} />
+            <div style={{ visibility: 'hidden', margin: '0rem 0rem -1rem', height: '0rem', overflow: 'hidden' }} />
+            <textarea
+              className={css(styles.textarea)}
+              defaultValue={this.state.text}
+              rows="7"
+              onChange={(e) => {
+                this.setState({ text: e.target.value });
+                this.props.onInputChange.call(this, e);
+              }}
+            />
           </Pane>
           <Pane label="URL">
-            <textarea className={css(styles.textarea)} defaultValue={this.state.url} onChange={(e) => {
-              this.setState({ url: e.target.value });
-              this.props.onInputChange.call(this,e);
-            }} />
+            <textarea
+              className={css(styles.textarea)}
+              defaultValue={this.state.url}
+              onChange={(e) => {
+                this.setState({ url: e.target.value });
+                this.props.onInputChange.call(this, e);
+              }}
+            />
           </Pane>
         </Tabs>
-        <p style={{visibility: this.props.language ? 'visible' : 'hidden' }}
-           className={css(styles.language)}>{this.props.language ? languages.getLanguageName(this.props.language) : null}</p>
-        <p className={css(styles.footnote)}>For results unique to your business needs consider building a <a href="https://www.ibm.com/us-en/marketplace/supervised-machine-learning" target="_blank">custom model</a>.</p>
+        <p
+          style={{ visibility: this.props.language ? 'visible' : 'hidden' }}
+          className={css(styles.language)}
+        >{this.props.language ? languages.getLanguageName(this.props.language) : null}</p>
+        <p className={css(styles.footnote)}>For results unique to your business needs consider building a <a href="https://www.ibm.com/us-en/marketplace/supervised-machine-learning" target="_blank" rel="noopener noreferrer" >custom model</a>.</p>
         <div className={css(styles.buttonContainer)}>
           <button
             disabled={this.props.disableButton}
             className={`base--button_fill ${css(styles.button)}`}
-            onClick={this.onAnalyzeClick}>
+            onClick={this.onAnalyzeClick}
+          >
               Analyze
           </button>
-          {this.props.error ? <ErrorMessage error={this.props.error}/> : null}
+          {this.props.error ? <ErrorMessage error={this.props.error} /> : null}
         </div>
       </div>
     );
-  }
+  },
 });
 
 export default Input;

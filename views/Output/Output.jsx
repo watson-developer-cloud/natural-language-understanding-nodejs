@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheet, css } from 'aphrodite/no-important';
 import { Tabs, Pane, Icon } from 'watson-react-components';
+import lang from 'language-list';
 import Sentiment from './Sentiment.jsx';
 import Emotion from './Emotion.jsx';
 import Keywords from './Keywords.jsx';
@@ -10,8 +11,8 @@ import Categories from './Categories.jsx';
 import Concept from './Concept.jsx';
 import SemanticRoles from './SemanticRoles.jsx';
 import { MAX_CONTENT_WIDTH } from '../utils/variables';
-import lang from 'language-list';
-let languages = lang();
+
+const languages = lang();
 
 const styles = StyleSheet.create({
   outputSection: {
@@ -97,6 +98,13 @@ Output.propTypes = {
   loading: PropTypes.bool,
   query: PropTypes.object,
   language: PropTypes.string,
+};
+
+Output.defaultProps = {
+  data: {},
+  loading: false,
+  query: {},
+  language: 'en',
 };
 
 export default Output;

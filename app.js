@@ -15,34 +15,37 @@
  */
 
 const express = require('express');
-const app = express();
 const NaturalLanguageUnderstandingV1 = require('watson-developer-cloud/natural-language-understanding/v1.js');
+
+const app = express();
 const nlu = new NaturalLanguageUnderstandingV1({
-  version_date: NaturalLanguageUnderstandingV1.VERSION_DATE_2016_01_23
+  version_date: NaturalLanguageUnderstandingV1.VERSION_DATE_2017_02_27,
 });
 
 // setup body-parser
 const bodyParser = require('body-parser');
+
 app.use(bodyParser.json());
 
 // Bootstrap application settings
 require('./config/express')(app);
 
 
-app.get('/', function(req, res) {
-  res.render('index');
+app.get('/', (req, res) => {
+  res.render('index', {
+    bluemixAnalytics: !!process.env.BLUEMIX_ANALYTICS,
+  });
 });
 
-app.post('/api/analyze', function(req, res, next) {
+app.post('/api/analyze', (req, res, next) => {
   if (process.env.SHOW_DUMMY_DATA) {
     res.json(require('./payload.json'));
   } else {
     nlu.analyze(req.body, (err, results) => {
       if (err) {
         return next(err);
-      } else {
-        res.json({ query: req.body.query, results });
       }
+      return res.json({ query: req.body.query, results });
     });
   }
 });

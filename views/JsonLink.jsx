@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Icon, Colors, Code } from 'watson-react-components';
-import { z } from './utils/zIndices.js';
+import { StyleSheet, css } from 'aphrodite/no-important';
+import { z } from './utils/zIndices';
 import { breakpoint, breakpointsObj as bp } from './utils/breakpoints';
 import { colors } from './utils/colors';
-import { StyleSheet, css } from 'aphrodite/no-important';
 
 const styles = StyleSheet.create({
   container: {
@@ -14,13 +14,13 @@ const styles = StyleSheet.create({
       alignItems: 'flex-start',
       flexWrap: 'wrap',
       justifyContent: 'space-between',
-    }
+    },
   },
   desc: {
     [breakpoint(bp.MEDIUM)]: {
       width: 'calc(100% - 6rem)',
       marginBottom: '1rem',
-    }
+    },
   },
   spacer: {
     flexGrow: '1',
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
       marginLeft: '1rem',
       marginBottom: '1rem',
       textAlign: 'right',
-    }
+    },
   },
   span: {},
   icon1: {
@@ -129,9 +129,12 @@ export default function JsonLink(props) {
         <Code language="json">
           {JSON.stringify(normalizeJson(props.json), null, 1)}
         </Code>
-        <button className={css(styles.button)} onClick={(e) => {
-          props.onExit.call(this, e);
-        }}>
+        <button
+          className={css(styles.button)}
+          onClick={(e) => {
+            props.onExit.call(this, e);
+          }}
+        >
           <Icon type="close" fill="#333" />
         </button>
       </div>
@@ -158,4 +161,6 @@ JsonLink.defaultProps = {
   showJson: false,
   onExit: () => {},
   onShow: () => {},
+  children: null,
+  description: null,
 };

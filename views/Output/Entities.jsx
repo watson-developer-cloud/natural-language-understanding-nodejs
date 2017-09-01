@@ -33,7 +33,7 @@ const tableTheme = {
     ':nth-of-type(2)': {
       fontWeight: weight.MEDIUM,
       color: colors.COOL_GRAY,
-    }
+    },
   },
   cell_two: {
     ':first-child': {
@@ -52,7 +52,7 @@ const tableTheme = {
   },
   inner_two: {
     width: 'calc(100% - 5rem)',
-  }
+  },
 };
 
 export default React.createClass({
@@ -62,7 +62,7 @@ export default React.createClass({
     data: PropTypes.arrayOf(PropTypes.shape({
       text: PropTypes.string,
       type: PropTypes.string,
-      relevance: PropTypes.number
+      relevance: PropTypes.number,
     })),
     language: PropTypes.string,
   },
@@ -70,12 +70,12 @@ export default React.createClass({
   getInitialState() {
     return {
       showJson: false,
-      visibleItems : 10,
+      visibleItems: 10,
     };
   },
 
   toggleJson() {
-    this.setState({'showJson' :!this.state.showJson});
+    this.setState({ showJson: !this.state.showJson });
   },
 
   onWaypoint() {
@@ -92,7 +92,7 @@ export default React.createClass({
     return (
       <div>
         <OutputTemplate
-          description={<p className="base--p_small">Extract people, companies, organizations, cities, geographic features, and <a href="https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/#entities" target="_blank">other information</a> from the content.</p>}
+          description={<p className="base--p_small">Extract people, companies, organizations, cities, geographic features, and <a href="https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/#entities" target="_blank" rel="noopener noreferrer">other information</a> from the content.</p>}
           data={{ entities: this.props.data }}
           showJson={this.state.showJson}
           onExitJson={this.toggleJson}
@@ -103,10 +103,12 @@ export default React.createClass({
               <Table
                 columns={['Name', 'Type', 'Score']}
                 theme={tableTheme}
-                data={this.props.data.reduce((acc,item) => {
-                  acc.push({'Name': item.text, 'Type': item.type, 'Score': <Bar score={item.relevance} /> });
+                data={this.props.data.reduce((acc, item) => {
+                  acc.push({ Name: item.text,
+                    Type: item.type,
+                    Score: <Bar score={item.relevance} /> });
                   return acc;
-                },[]).filter((val, i) => i <= this.state.visibleItems)}
+                }, []).filter((val, i) => i <= this.state.visibleItems)}
               />
               <Waypoint onEnter={this.onWaypoint} />
             </div>
@@ -116,5 +118,5 @@ export default React.createClass({
         </OutputTemplate>
       </div>
     );
-  }
+  },
 });

@@ -7,15 +7,15 @@ const breakpointsSource = [
   ['MEDIUM', '768px'],
   ['LARGE', '1024px'],
   ['X_LARGE', '1200px'],
-  ['XX_LARGE', '1280px']
+  ['XX_LARGE', '1280px'],
 ];
 
 // Container names
-export const breakpointsArr = breakpointsSource.map((e) => e[0]);
+export const breakpointsArr = breakpointsSource.map(e => e[0]);
 // Containers object
 export const breakpointsObj = breakpointsSource.reduce(
   (prev, next) => {
-    prev[next[0]] = next[1];
+    prev[next[0]] = next[1]; // eslint-disable-line
     return prev;
   }, {});
 
@@ -29,4 +29,4 @@ export const breakpointsObj = breakpointsSource.reduce(
  * @param  {string} breakpoint   css unit value (i.e. 10px, 2rem, etc.)
  * @return {string} media query string
  */
-export const breakpoint = (breakpoint) => `@media (min-width: ${breakpoint})`;
+export const breakpoint = breakpt => `@media (min-width: ${breakpt})`;

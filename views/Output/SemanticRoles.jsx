@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import OutputTemplate from './OutputTemplate.jsx';
 import { StyleSheet, css } from 'aphrodite/no-important';
+import OutputTemplate from './OutputTemplate.jsx';
 import { colors } from '../utils/colors';
 import { weight } from '../utils/typography';
 
@@ -43,45 +43,52 @@ const styles = StyleSheet.create({
   },
 });
 
-const escapeRegExp = (text) => text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
+const escapeRegExp = text => text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
 
-class SemSent extends React.Component {
-  replacements() {
-    let res = ['action','object','subject'].reduce((acc, item) => {
-      if (this.props.data[item]) {
-        let replaceText = this.props.data[item].text;
-        let withText = `<span class=${css(styles.token)}><span class=${css(styles.innerToken)}> ${this.props.data[item].text}&nbsp;</span><span class='${css(styles.label)}'>${item}</span></span>`;
-        let regex = new RegExp(`\\b${escapeRegExp(replaceText)}\\b`);
-        return acc.replace(regex, withText);
-      } else {
-        return acc;
-      }
-    }, this.props.data.sentence);
-    return { __html: res};
-  }
-  render() {
-    return (<div className={css(styles.sentence)} ><div dangerouslySetInnerHTML={this.replacements()} /></div>);
-  }
-}
-SemSent.propTypes = {
-  data: PropTypes.object,
+const replacements = (props) => {
+  const res = ['action', 'object', 'subject'].reduce((acc, item) => {
+    if (props.data[item]) {
+      const replaceText = props.data[item].text;
+      const withText = `<span class=${css(styles.token)}><span class=${css(styles.innerToken)}> ${props.data[item].text}&nbsp;</span><span class='${css(styles.label)}'>${item}</span></span>`;
+      const regex = new RegExp(`\\b${escapeRegExp(replaceText)}\\b`);
+      return acc.replace(regex, withText);
+    }
+    return acc;
+  }, props.data.sentence);
+  return { __html: res };
 };
 
-class SemSentences extends React.Component {
-  render() {
-    return <div className='sentences'>{this.props.data.map((item, i) => <SemSent key={`sem-sent-${i}`} data={item}/>)}</div>;
-  }
-}
+replacements.propTypes = {
+  data: PropTypes.arrayof,
+};
+
+replacements.defaultProps = {
+  data: [],
+};
+
+const SemSent = props => (
+  <div className={css(styles.sentence)} >
+    <div dangerouslySetInnerHTML={replacements(props)} />
+  </div>
+);
+
+
+const SemSentences = props =>
+  <div className="sentences">{props.data.map(item => <SemSent key={`sem-sent-${item}`} data={item} />)}</div>;
 
 SemSentences.propTypes = {
-  data: PropTypes.array,
+  data: PropTypes.arrayof,
+};
+
+SemSentences.defaultProps = {
+  data: [],
 };
 
 export default React.createClass({
   displayName: 'SemanticRoles',
 
   propTypes: {
-    data: PropTypes.array,
+    data: PropTypes.arrayOf,
     language: PropTypes.string,
   },
 
@@ -92,14 +99,14 @@ export default React.createClass({
   },
 
   toggleJson() {
-    this.setState({'showJson' :!this.state.showJson});
+    this.setState({ showJson: !this.state.showJson });
   },
 
   render() {
     return (
       <div>
         <OutputTemplate
-          description={<p className='base--p_small'>Parse sentences into subject, action, and object form and view additional <a href="https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/#semantic-roles" target="_blank">semantic information</a> such as keywords, entities, sentiment, and verb normalization.</p>}
+          description={<p className="base--p_small">Parse sentences into subject, action, and object form and view additional <a href="https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/#semantic-roles" target="_blank" rel="noopener noreferrer">semantic information</a> such as keywords, entities, sentiment, and verb normalization.</p>}
           data={{ semantic_roles: this.props.data }}
           showJson={this.state.showJson}
           onExitJson={this.toggleJson}
@@ -113,5 +120,5 @@ export default React.createClass({
         </OutputTemplate>
       </div>
     );
-  }
+  },
 });

@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     marginLeft: '1rem',
     border: 'none',
     padding: '0rem',
-  }
+  },
 });
 
 let value = '';
@@ -27,16 +27,24 @@ let value = '';
 function MoreInput(props) {
   return (
     <div className={css(styles.container)}>
-      <input type="text" placeholder="Enter existing phrase from input" {...props} onKeyUp={(e) => {
-        value = e.target.value;
-        if (e.keyCode === 13) {
+      <input
+        type="text"
+        placeholder="Enter existing phrase from input"
+        {...props}
+        onKeyUp={(e) => {
+          value = e.target.value;
+          if (e.keyCode === 13) {
+            props.onSubmit.call(this, e);
+          }
+        }}
+      />
+      <button
+        className={css(styles.button)}
+        onClick={(e) => {
+          e.target.value = value;
           props.onSubmit.call(this, e);
-        }
-      }} />
-      <button className={css(styles.button)} onClick={(e) => {
-        e.target.value = value;
-        props.onSubmit.call(this, e);
-      }}><Icon type="right" size="small" /></button>
+        }}
+      ><Icon type="right" size="small" /></button>
     </div>
   );
 }

@@ -1,3 +1,5 @@
+/* eslint no-underscore-dangle: off */
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import { parser } from 'css-math';
@@ -22,7 +24,6 @@ import { breakpoint, breakpointsObj as bp } from './utils/breakpoints';
  * @return {React Element}
  */
 function _generateTable(properties) {
-
   const columnWidth = parser(`100% / ${properties.columns.length}`);
 
   // regular table
@@ -104,7 +105,7 @@ function _generateTable(properties) {
         width: '100%',
       },
     },
-    properties.theme
+    properties.theme,
   ));
 
   let suffix = '';
@@ -130,7 +131,8 @@ function _generateTable(properties) {
               data-th={column}
               className={css(
                 styles[`cell${suffix}`],
-                properties.disableHeadersOnMobile || properties.disableHeader ? styles.cell_one : null
+                properties.disableHeadersOnMobile || properties.disableHeader ?
+                  styles.cell_one : null,
               )}
             >
               <div className={css(styles[`inner${suffix}`], properties.disableHeadersOnMobile || properties.disableHeader ? styles.inner_one : null)}>
@@ -151,7 +153,7 @@ function Table(props) {
 Table.propTypes = {
   columns: PropTypes.arrayOf(PropTypes.string).isRequired, // string of properties
   data: PropTypes.arrayOf(PropTypes.object).isRequired,
-  theme: PropTypes.object,  // styles
+  theme: PropTypes.object, // styles
   disableHeadersOnMobile: PropTypes.bool,
   disableHeader: PropTypes.bool,
 };

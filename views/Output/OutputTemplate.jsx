@@ -30,15 +30,23 @@ OutputTemplate.propTypes = {
   showJson: PropTypes.bool,
   onExitJson: PropTypes.func,
   onShowJson: PropTypes.func,
-  description: PropTypes.element,
+  description: PropTypes.element.isRequired,
   data: PropTypes.oneOfType([
     PropTypes.array,
     PropTypes.object,
   ]),
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node
+    PropTypes.node,
   ]),
+};
+
+OutputTemplate.defaultProps = {
+  showJson: false,
+  onExitJson: () => {},
+  onShowJson: () => {},
+  data: {},
+  children: {},
 };
 
 export default OutputTemplate;

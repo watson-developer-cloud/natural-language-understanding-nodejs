@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Icon } from 'watson-react-components';
 import { StyleSheet, css } from 'aphrodite/no-important';
+import scrollToElement from 'scroll-to-element';
 import OutputTemplate from './OutputTemplate.jsx';
 import { breakpoint, breakpointsObj as bp } from '../utils/breakpoints';
 import { colors } from '../utils/colors';
@@ -10,7 +11,6 @@ import { targetedLoading } from '../utils/variables';
 import Table from '../Table.jsx';
 import Bar from '../Bar.jsx';
 import ErrorMessage from '../ErrorMessage.jsx';
-import scrollToElement from 'scroll-to-element';
 import MoreInput from './MoreInput.jsx';
 import { analyze } from '../utils/request';
 
@@ -40,12 +40,12 @@ const tableTheme = {
       width: 'calc(100% - 5rem)',
       ':first-child': {
         width: '5rem',
-      }
+      },
     },
     [breakpoint(bp.LARGE)]: {
       ':first-child': {
         width: 'auto',
-      }
+      },
     },
   },
 };
@@ -77,11 +77,12 @@ function EmotionTable(props) {
 }
 
 EmotionTable.propTypes = {
-  theme: PropTypes.oneOfType([
-    PropTypes.func,
-    PropTypes.object,
-  ]),
+  theme: PropTypes.object.isRequired,
   emotion: PropTypes.object,
+};
+
+EmotionTable.defaultProps = {
+  emotion: {},
 };
 
 export default React.createClass({
@@ -115,30 +116,30 @@ export default React.createClass({
     const query = Object.assign({}, this.props.query, {
       features: {
         emotion: {
-          targets: this.state.targets
-        }
-      }
+          targets: this.state.targets,
+        },
+      },
     });
 
     analyze(query)
-    .then(json =>
-      this.setState({ targetData: json.results.emotion.targets, loading: false, error: null})
-    )
-    .catch((error) => this.setState({ error, loading: false }))
-    .then(() =>
-      setTimeout(() => { scrollToElement('#anchor-target-emotion', { duration: 300 }, 100); }, 0)
-    );
+      .then(json =>
+        this.setState({ targetData: json.results.emotion.targets, loading: false, error: null }),
+      )
+      .catch(error => this.setState({ error, loading: false }))
+      .then(() =>
+        setTimeout(() => { scrollToElement('#anchor-target-emotion', { duration: 300 }, 100); }, 0),
+      );
   },
 
   toggleJson() {
-    this.setState({'showJson' :!this.state.showJson});
+    this.setState({ showJson: !this.state.showJson });
   },
 
   render() {
     return (
       <div>
         <OutputTemplate
-          description={<p className="base--p_small">Analyze the overall <a href="https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/#emotion" target="_blank">emotion</a> and the <a href="https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/#emotion" target="_blank">targeted emotion</a> of the content.</p>}
+          description={<p className="base--p_small">Analyze the overall <a href="https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/#emotion" target="_blank" rel="noopener noreferrer">emotion</a> and the <a href="https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/#emotion" target="_blank" rel="noopener noreferrer">targeted emotion</a> of the content.</p>}
           data={{ emotion: this.props.data }}
           showJson={this.state.showJson}
           onExitJson={this.toggleJson}
@@ -147,12 +148,15 @@ export default React.createClass({
           {this.props.data && this.props.data.document ? (
             <div>
               <h4>Overall Emotion</h4>
-              <EmotionTable theme={tableTheme} emotion={this.props.data.document.emotion}/>
-              <div id="anchor-target-emotion" style={{marginTop: '0rem'}}></div>
+              <EmotionTable theme={tableTheme} emotion={this.props.data.document.emotion} />
+              <div id="anchor-target-emotion" style={{ marginTop: '0rem' }} />
               <h4>Targeted Emotion</h4>
               <MoreInput onSubmit={this.onTargetSubmit} />
-              {(this.state.error && !this.state.loading) ? <ErrorMessage error={this.state.error}/> : null}
-              {(this.state.loading && !this.state.error) ? <div className={css(styles.loading)}><Icon type="loader" size="large" /></div> : null}
+              {(this.state.error && !this.state.loading) ?
+                <ErrorMessage error={this.state.error} /> : null}
+              {(this.state.loading && !this.state.error) ?
+                <div className={css(styles.loading)}><Icon type="loader" size="large" /></div>
+                : null}
               {this.state.targetData ? (
                 this.state.targetData.reverse().map((target, i) => (
                   <div key={`${target.text}-${i}`}>
@@ -168,5 +172,5 @@ export default React.createClass({
         </OutputTemplate>
       </div>
     );
-  }
+  },
 });
