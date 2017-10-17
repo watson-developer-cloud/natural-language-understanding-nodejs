@@ -13,6 +13,7 @@ export default React.createClass({
 
   getInitialState() {
     return {
+      requestType: 'text',
       loading: false,
       error: null,
       data: null,
@@ -27,7 +28,7 @@ export default React.createClass({
   },
 
   onSubmitClick(value) {
-    const query = isUri(value) ? { url: value } : { text: value };
+    const query = this.state.requestType === 'url' ? { url: value } : { text: value };
     this.setState({
       query,
       disableButton: true,
@@ -45,6 +46,13 @@ export default React.createClass({
       );
   },
 
+  changeRequestType(index) {
+    const requestType = index === 0 ? 'text' : 'url';
+    this.setState({
+      requestType,
+    });
+  },
+
   render() {
     return (
       <div className="_container _container_large">
@@ -57,6 +65,7 @@ export default React.createClass({
           onSubmit={this.onSubmitClick}
           onTabChange={this.enableButton}
           onInputChange={this.enableButton}
+          changeRequestType={this.changeRequestType}
         />
         <div id="anchor" style={{ marginTop: '0rem' }} />
         { !this.state.error ? (
