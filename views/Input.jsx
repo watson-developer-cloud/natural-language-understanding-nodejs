@@ -84,6 +84,7 @@ const Input = React.createClass({
     text: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
     language: PropTypes.string,
+    changeRequestType: PropTypes.func,
     disableButton: PropTypes.bool,
     onSubmit: PropTypes.func,
     onTabChange: PropTypes.func,
@@ -124,6 +125,7 @@ const Input = React.createClass({
           onChange={(i) => {
             index = i;
             this.props.onTabChange.call(this);
+            this.props.changeRequestType(index);
           }}
         >
           <Pane label="Text">
