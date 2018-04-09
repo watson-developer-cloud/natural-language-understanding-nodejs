@@ -19,7 +19,7 @@ const NaturalLanguageUnderstandingV1 = require('watson-developer-cloud/natural-l
 
 const app = express();
 const nlu = new NaturalLanguageUnderstandingV1({
-  version_date: NaturalLanguageUnderstandingV1.VERSION_DATE_2017_02_27,
+  version_date: '2018-04-05',
 });
 
 // setup body-parser
