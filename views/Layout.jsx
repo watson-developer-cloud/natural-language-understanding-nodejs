@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Header, Jumbotron } from 'watson-react-components';
+import { Header, Jumbotron, Footer } from 'watson-react-components';
 
 const demoName = 'Natural Language Understanding';
 const DESCRIPTION = 'Natural Language Understanding is a collection of APIs that offer text analysis through natural language processing. This set of APIs can analyze text to help you understand its concepts, entities, keywords, sentiment, and more. Additionally, you can create a custom model for some APIs to get specific results that are tailored to your domain.';
@@ -39,6 +39,17 @@ export default function Layout(props) {
         />
         <div id="root">
           {props.children}
+        </div>
+        <div className="footer-container--div">
+          <section className="_full-width-row footer-gdpr--section">
+            <span>
+              This system is for demonstration purposes only and is not intended to process
+              Personal Data. No Personal Data is to be entered into this system as it may not
+              have the necessary controls in place to meet the requirements of the General
+              Data Protection Regulation (EU) 2016/679.
+            </span>
+          </section>
+          <Footer />
         </div>
         <script type="text/javascript" src="scripts/bundle.js" />
         { props.bluemixAnalytics ?
