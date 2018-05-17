@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     maxWidth: parser(`${MAX_CONTENT_WIDTH} - 1rem`),
   },
   header: {
-    marginTop: '6rem',
+    marginTop: '3rem',
     marginBottom: '2rem',
     color: colors.PRIMARY,
     fontWeight: weight.NORMAL,
@@ -156,7 +156,13 @@ const Input = React.createClass({
           style={{ visibility: this.props.language ? 'visible' : 'hidden' }}
           className={css(styles.language)}
         >{this.props.language ? languages.getLanguageName(this.props.language) : null}</p>
-        <p className={css(styles.footnote)}>For results unique to your business needs consider building a <a href="https://www.ibm.com/us-en/marketplace/supervised-machine-learning" target="_blank" rel="noopener noreferrer" >custom model</a>.</p>
+        <p className={css(styles.footnote)}>For results unique to your business needs consider building a <a href="https://www.ibm.com/watson/services/knowledge-studio/" target="_blank" rel="noopener noreferrer" >custom model</a>.</p>
+        <p className={css(styles.footnote)}>
+          * This system is for demonstration purposes only and is not intended to
+          process Personal Data. No Personal Data is to be entered into this system as it may not have the
+          necessary controls in place to meet the requirements of the General Data Protection Regulation (EU)
+          2016/679.
+        </p>
         <div className={css(styles.buttonContainer)}>
           <button
             disabled={this.props.disableButton}

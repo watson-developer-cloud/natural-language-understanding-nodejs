@@ -1,6 +1,5 @@
 import React from 'react';
 import scrollToElement from 'scroll-to-element';
-import { isUri } from 'valid-url';
 import Input from './Input.jsx';
 import Output from './Output/Output.jsx';
 import { analyzeWithAllFeatures } from './utils/request';
