@@ -13,18 +13,15 @@ const { html, css } = StyleSheetServer.renderStatic(() =>
 
 export { html, css };
 
-export default function Index(props) {
+export default function Index() {
   return (<Layout
-    bluemixAnalytics={props.bluemixAnalytics}
     css={css}
   >{(new HtmlToReact.Parser(React)).parse(html)}
   </Layout>);
 }
 
 Index.defaultProps = {
-  bluemixAnalytics: false,
 };
 
 Index.propTypes = {
-  bluemixAnalytics: PropTypes.bool,
 };

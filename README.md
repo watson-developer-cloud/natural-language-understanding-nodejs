@@ -4,12 +4,6 @@ Natural Language Understanding is a collection of APIs that offer text analysis 
 
 [![Demo](demo.gif)](https://natural-language-understanding-demo.mybluemix.net)
 
-## Deploy the application using the Deploy to Bluemix button
-
-Clicking on the button below creates a Bluemix DevOps Toolchain and deploys this application to Bluemix.
-
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/devops/setup/deploy?repository=https://github.com/watson-developer-cloud/natural-language-understanding-nodejs.git)
-
 ## Getting started
 
 1. You need a Bluemix account. If you don't have one, [sign up][sign_up].
@@ -133,22 +127,6 @@ docker run -P --env-file docker.env <IMAGEID>
 
   Find more open source projects on the [IBM Github Page](http://ibm.github.io/)
 
-## Privacy Notice
-
-Sample web applications that include this package may be configured to track deployments to [IBM Bluemix](https://www.bluemix.net/) and other Cloud Foundry platforms. The following information is sent to a [Deployment Tracker](https://github.com/IBM-Bluemix/cf-deployment-tracker-service) service on each deployment:
-
-* Node.js package version
-* Node.js repository URL
-* Application Name (`application_name`)
-* Space ID (`space_id`)
-* Application Version (`application_version`)
-* Application URIs (`application_uris`)
-* Labels of bound services
-* Number of instances for each bound service and associated plan information
-
-This data is collected from the `package.json` file in the sample application and the `VCAP_APPLICATION` and `VCAP_SERVICES` environment variables in IBM Bluemix and other Cloud Foundry platforms. This data is used by IBM to track metrics around deployments of sample applications to IBM Bluemix to measure the usefulness of our examples, so that we can continuously improve the content we offer to you. Only deployments of sample applications that include code to ping the Deployment Tracker service will be tracked.
-
-[deploy_track_url]: https://github.com/cloudant-labs/deployment-tracker
 [cloud_foundry]: https://github.com/cloudfoundry/cli
 [getting_started]: https://console.bluemix.net/docs/services/watson/index.html
 [service_url]: https://www.ibm.com/watson/services/natural-language-understanding/
