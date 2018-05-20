@@ -40,12 +40,6 @@ export default function Layout(props) {
         <div id="root">
           {props.children}
         </div>
-        <div>
-           This system is for demonstration purposes only and is not intended to process
-           Personal Data. No Personal Data is to be entered into this system as it may not
-           have the necessary controls in place to meet the requirements of the General
-           Data Protection Regulation (EU) 2016/679.
-        </div>
         <script type="text/javascript" src="scripts/bundle.js" />
         <script type="text/javascript" src="scripts/analytics.js" />
       </body>
