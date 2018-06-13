@@ -41,7 +41,7 @@ export default function Layout(props) {
           {props.children}
         </div>
         <script type="text/javascript" src="scripts/bundle.js" />
-        <script type="text/javascript" src="scripts/analytics.js" />
+        <script type="text/javascript" src="https://cdn.rawgit.com/watson-developer-cloud/watson-developer-cloud.github.io/master/analytics.js" />
       </body>
     </html>
   );
