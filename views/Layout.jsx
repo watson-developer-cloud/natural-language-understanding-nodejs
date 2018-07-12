@@ -34,7 +34,7 @@ export default function Layout(props) {
           documentation="https://console.bluemix.net/docs/services/natural-language-understanding/getting-started.html"
           apiReference="http://www.ibm.com/watson/developercloud/natural-language-understanding/api"
           version="GA"
-          startInBluemix="https://console.bluemix.net/catalog/services/natural-language-understanding"
+          startInBluemix="https://console.bluemix.net/registration/?target=%2Fcatalog%2Fservices%2Fnatural-language-understanding%3FhideTours%3Dtrue%26cm_mmc%3D-_-Watson%2BCore_Watson%2BCore%2B-%2BPlatform-_-WW_WW-_-wdc-ref%26cm_mmc%3D-_-Watson%2BCore_Watson%2BCore%2B-%2BPlatform-_-WW_WW-_-wdc-ref%26cm_mmca1%3D000000OF%26cm_mmca2%3D10000409"
           description={DESCRIPTION}
         />
         <div id="root">
