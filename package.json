@@ -1,6 +1,6 @@
 {
   "name": "@ibm-watson/natural-language-understanding-nodejs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A sample Node.js app for IBM Cloud that use the IBM Watson Natural Language Understanding service",
   "repository": {
     "type": "git",
