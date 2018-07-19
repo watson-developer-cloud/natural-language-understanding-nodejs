@@ -30,14 +30,13 @@ const handleErrors = (response) => {
  * @param  {Object} params The parameters
  * @return {Promise}       The request promise
  */
-export const analyze = params =>
-  fetch('/api/analyze', {
-    method: 'POST',
-    headers: { 'content-type': 'application/json' },
-    body: JSON.stringify(params),
-  })
-    .then(parseJSON)
-    .then(handleErrors);
+export const analyze = params => fetch('/api/analyze', {
+  method: 'POST',
+  headers: { 'content-type': 'application/json' },
+  body: JSON.stringify(params),
+})
+  .then(parseJSON)
+  .then(handleErrors);
 
 
 /**

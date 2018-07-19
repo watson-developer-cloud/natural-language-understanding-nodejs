@@ -33,16 +33,13 @@ export default React.createClass({
       disableButton: true,
       loading: true,
     });
-
     setTimeout(() => { scrollToElement('#anchor', { duration: 300 }, 100); }, 0);
 
     // Send the request to NLU
     analyzeWithAllFeatures(query)
       .then(data => this.setState({ data, loading: false, error: null }))
       .catch(error => this.setState({ error, loading: false }))
-      .then(() =>
-        setTimeout(() => { scrollToElement('#anchor', { duration: 300 }, 100); }, 0),
-      );
+      .then(() => setTimeout(() => { scrollToElement('#anchor', { duration: 300 }, 100); }, 0));
   },
 
   changeRequestType(index) {
@@ -53,26 +50,30 @@ export default React.createClass({
   },
 
   render() {
+    const {
+      data, error, disableButton, loading, query,
+    } = this.state;
+
     return (
       <div className="_container _container_large">
         <Input
           text={DEFAULT_TEXT}
           url={DEFAULT_URL}
-          error={this.state.error}
-          language={this.state.data ? this.state.data.results.language : null}
-          disableButton={this.state.disableButton}
+          error={error}
+          language={data ? data.results.language : null}
+          disableButton={disableButton}
           onSubmit={this.onSubmitClick}
           onTabChange={this.enableButton}
           onInputChange={this.enableButton}
           changeRequestType={this.changeRequestType}
         />
         <div id="anchor" style={{ marginTop: '0rem' }} />
-        { !this.state.error ? (
+        { !error ? (
           <Output
-            loading={this.state.loading}
-            data={this.state.data}
-            query={this.state.query}
-            language={this.state.data ? this.state.data.results.language : null}
+            loading={loading}
+            data={data}
+            query={query}
+            language={data ? data.results.language : null}
           />) : null
         }
       </div>

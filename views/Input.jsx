@@ -117,15 +117,19 @@ const Input = React.createClass({
   },
 
   render() {
+    const { onTabChange, onInputChange, changeRequestType } = this.props;
+    const { text } = this.state;
     return (
       <div className={css(styles.container)}>
-        <h3 className={css(styles.header)}>Examine a news article or other content</h3>
+        <h3 className={css(styles.header)}>
+          Examine a news article or other content
+        </h3>
         <Tabs
           selected={index}
           onChange={(i) => {
             index = i;
-            this.props.onTabChange.call(this);
-            this.props.changeRequestType(index);
+            onTabChange.call(this);
+            changeRequestType(index);
           }}
         >
           <Pane label="Text">
@@ -133,11 +137,11 @@ const Input = React.createClass({
             <div style={{ visibility: 'hidden', margin: '0rem 0rem -1rem', height: '0rem', overflow: 'hidden' }} />
             <textarea
               className={css(styles.textarea)}
-              defaultValue={this.state.text}
+              defaultValue={text}
               rows="7"
               onChange={(e) => {
                 this.setState({ text: e.target.value });
-                this.props.onInputChange.call(this, e);
+                onInputChange.call(this, e);
               }}
             />
           </Pane>

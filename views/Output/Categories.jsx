@@ -66,31 +66,35 @@ export default React.createClass({
   },
 
   toggleJson() {
-    this.setState({ showJson: !this.state.showJson });
+    this.setState(prevState => ({ showJson: !prevState.showJson }));
   },
 
   render() {
+    const { data, language } = this.props;
+    const { showJson } = this.state;
     return (
       <div>
         <OutputTemplate
           description={<p className="base--p_small">Classify content into a <a href="https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/#categories" target="_blank" rel="noopener noreferrer">hierarchy</a> that&apos;s five levels deep with a score.</p>}
-          data={{ categories: this.props.data }}
-          showJson={this.state.showJson}
+          data={{ categories: data }}
+          showJson={showJson}
           onExitJson={this.toggleJson}
           onShowJson={this.toggleJson}
         >
-          {this.props.data && this.props.data.length > 0 ? (
+          {data && data.length > 0 ? (
             <Table
               disableHeadersOnMobile
               columns={['Hierarchy', 'Score']}
               theme={tableTheme}
-              data={this.props.data.reduce((acc, item) => {
+              data={data.reduce((acc, item) => {
                 acc.push({ Hierarchy: item.label.split('/').join(' / '), Score: <Bar score={item.score} /> });
                 return acc;
               }, [])}
             />
           ) : (
-            <p>{`No Categories results returned for ${this.props.language} input.`}</p>
+            <p>
+              {`No Categories results returned for ${language} input.`}
+            </p>
           )}
         </OutputTemplate>
       </div>

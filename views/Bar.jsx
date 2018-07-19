@@ -44,17 +44,26 @@ const styles = StyleSheet.create({
 });
 
 function Bar(props) {
-  const mapped = map(x => x, props.rangeStart, props.rangeEnd, 0, 1);
-  return (props.withScore ?
-    <div className={css(styles.container)}>
-      <div className={css(styles.fullBar)}>
-        <div className={css(styles.bar)} style={{ width: `${Math.round(mapped(props.score) * 100)}%` }} />
+  const {
+    rangeEnd, rangeStart, score, withScore,
+  } = props;
+  const mapped = map(x => x, rangeStart, rangeEnd, 0, 1);
+  return (withScore
+    ? (
+      <div className={css(styles.container)}>
+        <div className={css(styles.fullBar)}>
+          <div className={css(styles.bar)} style={{ width: `${Math.round(mapped(score) * 100)}%` }} />
+        </div>
+        <div className={css(styles.score)}>
+          {numeral(score).format('0.00')}
+        </div>
       </div>
-      <div className={css(styles.score)}>{numeral(props.score).format('0.00')}</div>
-    </div> :
-    <div className={css(styles.fullBar, styles.fullBar_barOnly)}>
-      <div className={css(styles.bar)} style={{ width: `${Math.round(mapped(props.score) * 100)}%` }} />
-    </div>
+    )
+    : (
+      <div className={css(styles.fullBar, styles.fullBar_barOnly)}>
+        <div className={css(styles.bar)} style={{ width: `${Math.round(mapped(score) * 100)}%` }} />
+      </div>
+    )
   );
 }
 

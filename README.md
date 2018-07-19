@@ -1,95 +1,102 @@
-# Natural Language Understanding Application [![Build Status](https://travis-ci.org/watson-developer-cloud/natural-language-understanding-nodejs.svg?branch=master)](https://travis-ci.org/watson-developer-cloud/natural-language-understanding-nodejs?branch=master)
+<h1 align="center" style="border-bottom: none;">🚀 Natural Language Understanding Sample Application</h1>
+<h3 align="center">This Node.js app demonstrates some of the Natural Language Understanding service features.</h3>
+<p align="center">
+  <a href="http://travis-ci.org/watson-developer-cloud/natural-language-understanding-nodejs">
+    <img alt="Travis" src="https://travis-ci.org/watson-developer-cloud/natural-language-understanding-nodejs.svg?branch=master">
+  </a>
+  <a href="#badge">
+    <img alt="semantic-release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg">
+  </a>
+</p>
+</p>
 
 Natural Language Understanding is a collection of APIs that offer text analysis through natural language processing. This set of APIs can analyze text to help you understand its concepts, entities, keywords, sentiment, and more. Additionally, you can create a custom model for some APIs to get specific results that are tailored to your domain.
 
 [![Demo](demo.gif)](https://natural-language-understanding-demo.mybluemix.net)
 
-## Getting started
 
-1. You need a Bluemix account. If you don't have one, [sign up][sign_up].
+## Prerequisites
 
-2. Download and install the [Cloud-foundry CLI][cloud_foundry] tool if you haven't already.
+1. Sign up for an [IBM Cloud account](https://console.bluemix.net/registration/).
+1. Download the [IBM Cloud CLI](https://console.bluemix.net/docs/cli/index.html#overview).
+1. Create an instance of the Natural Language Understanding service and get your credentials:
+    - Go to the [Natural Language Understanding](https://console.bluemix.net/catalog/services/natural-language-understanding) page in the IBM Cloud Catalog.
+    - Log in to your IBM Cloud account.
+    - Click **Create**.
+    - Click **Show** to view the service credentials.
+    - Copy the `apikey` value, or copy the `username` and `password` values if your service instance doesn't provide an `apikey`.
+    - Copy the `url` value.
 
-3. Edit the `manifest.yml` file and change `<application-name>` to something unique. The name you use determines the URL of your application. For example, `<application-name>.mybluemix.net`.
+## Configuring the application
 
-  ```yml
-  applications:
-  - services:
-    - my-service-instance
-    name: <application-name>
-    command: npm start
-    path: .
-    memory: 512M
-  ```
+1. In the application folder, copy the *.env.example* file and create a file called *.env*
 
-4. Connect to Bluemix with the command line tool.
+    ```
+    cp .env.example .env
+    ```
 
-  ```bash
-  cf api https://api.ng.bluemix.net
-  cf login
-  ```
+2. Open the *.env* file and add the service credentials that you obtained in the previous step.
 
-5. Create and retrieve service keys to access the [Natural Language Understanding][service_url] service:
+    Example *.env* file that configures the `apikey` and `url` for a Natural Language Understanding service instance hosted in the US East region:
 
-  ```none
-  cf create-service natural-language-understanding free my-nlu-service
-  cf create-service-key my-nlu-service myKey
-  cf service-key my-nlu-service myKey
-  ```
+    ```
+    NATURAL_LANGUAGE_UNDERSTANDING_IAM_APIKEY=X4rbi8vwZmKpXfowaS3GAsA7vdy17Qh7km5D6EzKLHL2
+    NATURAL_LANGUAGE_UNDERSTANDING_URL=https://gateway-wdc.watsonplatform.net/natural-language-understanding/api
+    ```
 
-6. Create a `.env` file in the root directory by copying the sample `.env.example` file using the following command:
+    - If your service instance uses `username` and `password` credentials, add the `NATURAL_LANGUAGE_UNDERSTANDING_USERNAME` and `NATURAL_LANGUAGE_UNDERSTANDING_PASSWORD` variables to the *.env* file.
 
-  ```none
-  cp .env.example .env
-  ```
-  You will update the `.env` with the information you retrieved in steps 5.
+    Example *.env* file that configures the `username`, `password`, and `url` for a Natural Language Understanding service instance hosted in the Sydney region:
 
-  The `.env` file will look something like the following:
+    ```
+    NATURAL_LANGUAGE_UNDERSTANDING_USERNAME=522be-7b41-ab44-dec3-g1eab2ha73c6
+    NATURAL_LANGUAGE_UNDERSTANDING_PASSWORD=A4Z5BdGENrwu8
+    NATURAL_LANGUAGE_UNDERSTANDING_URL=https://gateway-syd.watsonplatform.net/natural-language-understanding/api
+    ```
 
-  ```none
-  NATURAL_LANGUAGE_UNDERSTANDING_USERNAME=<username>
-  NATURAL_LANGUAGE_UNDERSTANDING_PASSWORD=<password>
-  ```
+## Running locally
 
-7. Install the dependencies you application need:
+1. Install the dependencies
 
-  ```none
-  npm install
-  ```
+    ```
+    npm install
+    ```
 
-8. Start the application locally:
+1. Run the application
 
-  ```none
-  npm start
-  ```
+    ```
+    npm start
+    ```
 
-9. Point your browser to [http://localhost:3000](http://localhost:3000).
+1. View the application in a browser at `localhost:3000`
 
-10. **Optional:** Push the application to Bluemix:
+## Deploying to IBM Cloud as a Cloud Foundry Application
 
-  ```none
-  cf push
-  ```
+1. Login to IBM Cloud with the [IBM Cloud CLI](https://console.bluemix.net/docs/cli/index.html#overview)
 
-After completing the steps above, you are ready to test your application. Start a browser and enter the URL of your application.
+    ```
+    ibmcloud login
+    ```
 
-            <your application name>.mybluemix.net
+1. Target a Cloud Foundry organization and space.
 
-For more details about developing applications that use Watson Developer Cloud services in Bluemix, see [Getting started with Watson Developer Cloud and Bluemix][getting_started].
+    ```
+    ibmcloud target --cf
+    ```
 
-## Troubleshooting
+1. Edit the *manifest.yml* file. Change the **name** field to something unique.  
+  For example, `- name: my-app-name`.
+1. Deploy the application
 
-* The main source of troubleshooting and recovery information is the Bluemix log. To view the log, run the following command:
+    ```
+    ibmcloud app push
+    ```
 
-  ```sh
-  cf logs <application-name> --recent
-  ```
+1. View the application online at the app URL.  
+For example: https://my-app-name.mybluemix.net
 
-* For more details about the service, see the [documentation][docs] for the Natural Language Understanding service.
 
-----
-
-### Directory structure
+## Directory structure
 
 ```none
 .
@@ -105,30 +112,16 @@ For more details about developing applications that use Watson Developer Cloud s
 └── views                       // react components
 ```
 
-### Running in Docker
-
-You'll need to update the `docker.env` file to contain the username, password, and (optionally) the URL
-for the NLU service.
-
-```bash
-docker build .
-docker run -P --env-file docker.env <IMAGEID>
-```
-
 ## License
 
-  This sample code is licensed under Apache 2.0.
+This sample code is licensed under Apache 2.0.  
+Full license text is available in [LICENSE](LICENSE).
 
 ## Contributing
 
-  See [CONTRIBUTING](CONTRIBUTING.md).
+See [CONTRIBUTING](CONTRIBUTING.md).
 
 ## Open Source @ IBM
 
-  Find more open source projects on the [IBM Github Page](http://ibm.github.io/)
-
-[cloud_foundry]: https://github.com/cloudfoundry/cli
-[getting_started]: https://console.bluemix.net/docs/services/watson/index.html
-[service_url]: https://www.ibm.com/watson/services/natural-language-understanding/
-[docs]: https://console.bluemix.net/docs/services/natural-language-understanding/getting-started.html
-[sign_up]: https://console.bluemix.net/registration/
+Find more open source projects on the
+[IBM Github Page](http://ibm.github.io/).

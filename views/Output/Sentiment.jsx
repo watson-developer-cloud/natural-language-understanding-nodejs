@@ -46,14 +46,14 @@ function getDataScore(props) {
 }
 
 function getSentimentString(props) {
-    const score = getDataScore(props)
-    if (score === 0) {
-      return 'Neutral'
-    } else if (score > 0) {
-      return 'Positive'
-    } else {
-      return 'Negative'
-    }
+  const score = getDataScore(props);
+  if (score === 0) {
+    return 'Neutral';
+  } else if (score > 0) {
+    return 'Positive';
+  } else {
+    return 'Negative';
+  }
 }
 
 export default React.createClass({
@@ -93,13 +93,9 @@ export default React.createClass({
     });
 
     analyze(query)
-      .then(json =>
-        this.setState({ targetData: json.results.sentiment.targets, loading: false, error: null }),
-      )
+      .then(json => this.setState({ targetData: json.results.sentiment.targets, loading: false, error: null }))
       .catch(error => this.setState({ error, loading: false }))
-      .then(() =>
-        setTimeout(() => { scrollToElement('#anchor-target-sentiment', { duration: 300 }, 100); }, 0),
-      );
+      .then(() => setTimeout(() => { scrollToElement('#anchor-target-sentiment', { duration: 300 }, 100); }, 0));
   },
 
   toggleJson() {

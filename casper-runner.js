@@ -15,12 +15,13 @@
 */
 require('dotenv').config({ silent: true });
 
-if (!process.env.NATURAL_LANGUAGE_UNDERSTANDING_USERNAME) {
-  console.log('Skipping integration tests because NATURAL_LANGUAGE_UNDERSTANDING_USERNAME is null'); // eslint-disable-line
+if (!process.env.NATURAL_LANGUAGE_UNDERSTANDING_USERNAME
+  && !process.env.NATURAL_LANGUAGE_UNDERSTANDING_IAM_APIKEY) {
+  console.log('Skipping integration tests because NATURAL_LANGUAGE_UNDERSTANDING_USERNAME and NATURAL_LANGUAGE_UNDERSTANDING_IAM_APIKEY are null'); // eslint-disable-line
   process.exit(0);
 }
 
-const spawn = require('child_process').spawn;
+const { spawn } = require('child_process');
 
 const app = require('./app');
 

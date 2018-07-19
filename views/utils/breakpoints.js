@@ -17,7 +17,8 @@ export const breakpointsObj = breakpointsSource.reduce(
   (prev, next) => {
     prev[next[0]] = next[1]; // eslint-disable-line
     return prev;
-  }, {});
+  }, {},
+);
 
 /**
  * function to generate media query

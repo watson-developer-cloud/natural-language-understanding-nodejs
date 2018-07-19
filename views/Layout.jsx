@@ -6,6 +6,7 @@ const demoName = 'Natural Language Understanding';
 const DESCRIPTION = 'Natural Language Understanding is a collection of APIs that offer text analysis through natural language processing. This set of APIs can analyze text to help you understand its concepts, entities, keywords, sentiment, and more. Additionally, you can create a custom model for some APIs to get specific results that are tailored to your domain. This system is for demonstration purposes only and is not intended to process Personal Data. No Personal Data is to be entered into this system as it may not have the necessary controls in place to meet the requirements of the General Data Protection Regulation (EU) 2016/679.';
 
 export default function Layout(props) {
+  const { css, children } = props;
   return (
     <html lang="en">
       <head>
@@ -18,7 +19,9 @@ export default function Layout(props) {
         <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="/css/watson-react-components.min.css" />
         <link rel="stylesheet" href="/css/style.css" />
-        <style date-aphrodite>{props.css.content}</style>
+        <style date-aphrodite>
+          {css.content}
+        </style>
         <script type="text/javascript" src="scripts/bundle.js" defer async />
       </head>
       <body>
@@ -26,7 +29,7 @@ export default function Layout(props) {
           mainBreadcrumbs={demoName}
           mainBreadcrumbsUrl="https://www.ibm.com/watson/services/natural-language-understanding/"
           subBreadcrumbs="Demo"
-          subBreadcrumbsUrl="https://natural-language-understanding-demo.mybluemix.net"
+          subBreadcrumbsUrl="https://natural-language-understanding-demo.ng.bluemix.net"
         />
         <Jumbotron
           serviceName={demoName}
@@ -38,7 +41,7 @@ export default function Layout(props) {
           description={DESCRIPTION}
         />
         <div id="root">
-          {props.children}
+          {children}
         </div>
         <script type="text/javascript" src="scripts/bundle.js" />
         <script type="text/javascript" src="https://cdn.rawgit.com/watson-developer-cloud/watson-developer-cloud.github.io/master/analytics.js" />

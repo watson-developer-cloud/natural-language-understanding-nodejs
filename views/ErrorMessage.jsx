@@ -13,10 +13,15 @@ export default React.createClass({
     }),
   },
   render() {
-    return (<div className="error">
-      <Alert type="error" color="red">
-        <p>{capitalize(this.props.error.error || 'There was a problem processing the request, please try again later.')}</p>
-      </Alert>
-    </div>);
+    const { error } = this.props;
+    return (
+      <div className="error">
+        <Alert type="error" color="red">
+          <p>
+            {capitalize(error.error || 'There was a problem processing the request, please try again later.')}
+          </p>
+        </Alert>
+      </div>
+    );
   },
 });
