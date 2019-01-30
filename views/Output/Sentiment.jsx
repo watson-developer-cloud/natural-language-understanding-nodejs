@@ -45,8 +45,7 @@ function getDataScore(props) {
   }
 }
 
-function getSentimentString(props) {
-  const score = getDataScore(props);
+function getSentimentString(score) {
   if (score === 0) {
     return 'Neutral';
   } else if (score > 0) {
@@ -119,7 +118,7 @@ export default React.createClass({
                 columns={['name', 'score']}
                 theme={tableTheme}
                 data={[{
-                  name: getSentimentString(this.props),
+                  name: getSentimentString(getDataScore(this.props)),
                   score: <Bar score={getDataScore(this.props)} rangeStart={-1} rangeEnd={1} />,
                 }]}
                 disableHeader
@@ -140,7 +139,7 @@ export default React.createClass({
                       columns={['name', 'score']}
                       theme={tableTheme}
                       data={[{
-                        name: getSentimentString(this.props),
+                        name: getSentimentString(target.score),
                         score: <Bar score={target.score} rangeStart={-1} rangeEnd={1} />,
                       }]}
                       disableHeader
