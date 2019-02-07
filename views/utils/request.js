@@ -10,11 +10,11 @@ const FEATURES = {
     sentiment: {},
     semantic_roles: {},
     syntax: {
-      'tokens' : {
+      'tokens': {
         'lemma':true,
-        'part_of_speech': true
+        'part_of_speech': true,
       },
-      'sentences': true
+      'sentences': true,
     }
   },
 };
