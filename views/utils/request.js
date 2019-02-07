@@ -10,12 +10,12 @@ const FEATURES = {
     sentiment: {},
     semantic_roles: {},
     syntax: {
-      'tokens': {
-        'lemma':true,
-        'part_of_speech': true,
+      tokens: {
+        lemma: true,
+        part_of_speech: true,
       },
-      'sentences': true,
-    }
+      sentences: true,
+    },
   },
 };
 
