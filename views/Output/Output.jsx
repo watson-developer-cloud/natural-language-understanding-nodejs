@@ -9,6 +9,7 @@ import Keywords from './Keywords.jsx';
 import Entities from './Entities.jsx';
 import Categories from './Categories.jsx';
 import Concept from './Concept.jsx';
+import Syntax from './Syntax.jsx';
 import SemanticRoles from './SemanticRoles.jsx';
 import { MAX_CONTENT_WIDTH } from '../utils/variables';
 
@@ -76,6 +77,12 @@ function Output(props) {
             <Pane label="Concept">
               <Concept
                 data={props.data.results.concepts}
+                language={languages.getLanguageName(props.language)}
+              />
+            </Pane>
+            <Pane label="Syntax">
+              <Syntax
+                data={props.data.results.syntax.tokens}
                 language={languages.getLanguageName(props.language)}
               />
             </Pane>
