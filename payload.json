@@ -1,6 +1,6 @@
 {
   "query": {
-    "text": "In the rugged Colorado Desert of California, there lies buried a treasure ship sailed there hundreds of years ago by either Viking or Spanish explorers. Some say this is legend; others insist it is fact. A few have even claimed to have seen the ship, its wooden remains poking through the sand like the skeleton of a prehistoric beast.Among those who say they’ve come close to the ship is small-town librarian Myrtle Botts. In 1933, she was hiking with her husband in the Anza-Borrego Desert, not far from the border with Mexico. It was early March, so the desert would have been in bloom, its washed-out yellows and grays beaten back by the riotous invasion of wildflowers. Those wildflowers were what brought the Bottses to the desert, and they ended up near a tiny settlement called Agua Caliente. Surrounding place names reflected the strangeness and severity of the land: Moonlight Canyon, Hellhole Canyon, Indian Gorge.Try Newsweek for only $1.25 per weekTo enter the desert is to succumb to the unknowable. One morning, a prospector appeared in the couple’s camp with news far more astonishing than a new species of desert flora: He’d found a ship lodged in the rocky face of Canebrake Canyon. The vessel was made of wood, and there was a serpentine figure carved into its prow. There were also impressions on its flanks where shields had been attached—all the hallmarks of a Viking craft. Recounting the episode later, Botts said she and her husband saw the ship but couldn’t reach it, so they vowed to return the following day, better prepared for a rugged hike. That wasn’t to be, because, several hours later, there was a 6.4 magnitude earthquake in the waters off Huntington Beach, in Southern California. Botts claimed it dislodged rocks that buried her Viking ship, which she never saw again.There are reasons to doubt her story, yet it is only one of many about sightings of the desert ship. By the time Myrtle and her husband had set out to explore, amid the blooming poppies and evening primrose, the story of the lost desert ship was already about 60 years old. By the time I heard it, while working on a story about desert conservation, it had been nearly a century and a half since explorer Albert S. Evans had published the first account. Traveling to San Bernardino, Evans came into a valley that was “the grim and silent ghost of a dead sea,” presumably Lake Cahuilla. “The moon threw a track of shimmering light,” he wrote, directly upon “the wreck of a gallant ship, which may have gone down there centuries ago.”The route Evans took came nowhere near Canebrake Canyon, and the ship Evans claimed to see was Spanish, not Norse. Others have also seen this vessel, but much farther south, in Baja California, Mexico. Like all great legends, the desert ship is immune to its contradictions: It is fake news for the romantic soul, offering passage into some ancient American dreamtime when blood and gold were the main currencies of civic life.The legend does seem, prima facie, bonkers: a craft loaded with untold riches, sailed by early-European explorers into a vast lake that once stretched over much of inland Southern California, then run aground, abandoned by its crew and covered over by centuries of sand and rock and creosote bush as that lake dried out…and now it lies a few feet below the surface, in sight of the chicken-wire fence at the back of the Desert Dunes motel, $58 a night and HBO in most rooms.Totally insane, right? Let us slink back to our cubicles and never speak of the desert ship again. Let us only believe that which is shared with us on Facebook. Let us banish forever all traces of wonder from our lives.Yet there are believers who insist that, using recent advances in archaeology, the ship can be found. They point, for example, to a wooden sloop from the 1770s unearthed during excavations at the World Trade Center site in lower Manhattan, or the more than 40 ships, dating back perhaps 800 years, discovered in the Black Sea earlier this year.",
+    "text": "In the rugged Colorado Desert of California, there lies buried a treasure ship sailed there hundreds of years ago by either Viking or Spanish explorers. Some say this is legend; others insist it is fact. A few have even claimed to have seen the ship, its wooden remains poking through the sand like the skeleton of a prehistoric beast. Among those who say they’ve come close to the ship is small-town librarian Myrtle Botts. In 1933, she was hiking with her husband in the Anza-Borrego Desert, not far from the border with Mexico. It was early March, so the desert would have been in bloom, its washed-out yellows and grays beaten back by the riotous invasion of wildflowers. Those wildflowers were what brought the Bottses to the desert, and they ended up near a tiny settlement called Agua Caliente. Surrounding place names reflected the strangeness and severity of the land: Moonlight Canyon, Hellhole Canyon, Indian Gorge. To enter the desert is to succumb to the unknowable. One morning, a prospector appeared in the couple’s camp with news far more astonishing than a new species of desert flora: He’d found a ship lodged in the rocky face of Canebrake Canyon. The vessel was made of wood, and there was a serpentine figure carved into its prow. There were also impressions on its flanks where shields had been attached—all the hallmarks of a Viking craft. Recounting the episode later, Botts said she and her husband saw the ship but couldn’t reach it, so they vowed to return the following day, better prepared for a rugged hike. That wasn’t to be, because, several hours later, there was a 6.4 magnitude earthquake in the waters off Huntington Beach, in Southern California. Botts claimed it dislodged rocks that buried her Viking ship, which she never saw again.There are reasons to doubt her story, yet it is only one of many about sightings of the desert ship. By the time Myrtle and her husband had set out to explore, amid the blooming poppies and evening primrose, the story of the lost desert ship was already about 60 years old. By the time I heard it, while working on a story about desert conservation, it had been nearly a century and a half since explorer Albert S. Evans had published the first account. Traveling to San Bernardino, Evans came into a valley that was “the grim and silent ghost of a dead sea,” presumably Lake Cahuilla. “The moon threw a track of shimmering light,” he wrote, directly upon “the wreck of a gallant ship, which may have gone down there centuries ago.” The route Evans took came nowhere near Canebrake Canyon, and the ship Evans claimed to see was Spanish, not Norse. Others have also seen this vessel, but much farther south, in Baja California, Mexico. Like all great legends, the desert ship is immune to its contradictions: It is fake news for the romantic soul, offering passage into some ancient American dreamtime when blood and gold were the main currencies of civic life. The legend does seem, prima facie, bonkers: a craft loaded with untold riches, sailed by early-European explorers into a vast lake that once stretched over much of inland Southern California, then run aground, abandoned by its crew and covered over by centuries of sand and rock and creosote bush as that lake dried out…and now it lies a few feet below the surface, in sight of the chicken-wire fence at the back of the Desert Dunes motel, $58 a night and HBO in most rooms. Totally insane, right? Let us slink back to our cubicles and never speak of the desert ship again. Let us only believe that which is shared with us on Facebook. Let us banish forever all traces of wonder from our lives. Yet there are believers who insist that, using recent advances in archaeology, the ship can be found. They point, for example, to a wooden sloop from the 1770s unearthed during excavations at the World Trade Center site in lower Manhattan, or the more than 40 ships, dating back perhaps 800 years, discovered in the Black Sea earlier this year.",
     "features": {
       "sentiment": {},
       "keywords": {},
@@ -12,12 +12,19 @@
     }
   },
   "results": {
+    "usage": {
+      "text_units": 1,
+      "text_characters": 3972,
+      "features": 7
+    },
     "sentiment": {
       "document": {
-        "score": -0.44463
+        "score": -0.544138,
+        "label": "negative"
       }
     },
-    "semantic_roles": [{
+    "semantic_roles": [
+      {
         "subject": {
           "text": "a treasure ship sailed there hundreds of years ago by either Viking or Spanish explorers"
         },
@@ -86,9 +93,9 @@
         "subject": {
           "text": "A few"
         },
-        "sentence": " A few have even claimed to have seen the ship, its wooden remains poking through the sand like the skeleton of a prehistoric beast.Among those who say they’ve come close to the ship is small-town librarian Myrtle Botts.",
+        "sentence": " A few have even claimed to have seen the ship, its wooden remains poking through the sand like the skeleton of a prehistoric beast.",
         "object": {
-          "text": "to have seen the ship"
+          "text": "to have seen the ship, its wooden remains poking through the sand like the skeleton of a prehistoric beast"
         },
         "action": {
           "verb": {
@@ -103,7 +110,7 @@
         "subject": {
           "text": "A few"
         },
-        "sentence": " A few have even claimed to have seen the ship, its wooden remains poking through the sand like the skeleton of a prehistoric beast.Among those who say they’ve come close to the ship is small-town librarian Myrtle Botts.",
+        "sentence": " A few have even claimed to have seen the ship, its wooden remains poking through the sand like the skeleton of a prehistoric beast.",
         "object": {
           "text": "the ship"
         },
@@ -118,26 +125,9 @@
       },
       {
         "subject": {
-          "text": "like the skeleton of a prehistoric beast.Among those who say they’ve come close to the ship is small-town librarian Myrtle Botts"
+          "text": "those"
         },
-        "sentence": " A few have even claimed to have seen the ship, its wooden remains poking through the sand like the skeleton of a prehistoric beast.Among those who say they’ve come close to the ship is small-town librarian Myrtle Botts.",
-        "object": {
-          "text": "through the sand"
-        },
-        "action": {
-          "verb": {
-            "text": "poke",
-            "tense": "present"
-          },
-          "text": "poking",
-          "normalized": "poke"
-        }
-      },
-      {
-        "subject": {
-          "text": "a prehistoric beast.Among those"
-        },
-        "sentence": " A few have even claimed to have seen the ship, its wooden remains poking through the sand like the skeleton of a prehistoric beast.Among those who say they’ve come close to the ship is small-town librarian Myrtle Botts.",
+        "sentence": " Among those who say they’ve come close to the ship is small-town librarian Myrtle Botts.",
         "object": {
           "text": "they’ve come close to the ship"
         },
@@ -152,26 +142,9 @@
       },
       {
         "subject": {
-          "text": "they"
-        },
-        "sentence": " A few have even claimed to have seen the ship, its wooden remains poking through the sand like the skeleton of a prehistoric beast.Among those who say they’ve come close to the ship is small-town librarian Myrtle Botts.",
-        "object": {
-          "text": "a prehistoric beast.Among those"
-        },
-        "action": {
-          "verb": {
-            "text": "have",
-            "tense": "present"
-          },
-          "text": "ve come",
-          "normalized": "ve come"
-        }
-      },
-      {
-        "subject": {
           "text": "they’ve come close to the ship"
         },
-        "sentence": " A few have even claimed to have seen the ship, its wooden remains poking through the sand like the skeleton of a prehistoric beast.Among those who say they’ve come close to the ship is small-town librarian Myrtle Botts.",
+        "sentence": " Among those who say they’ve come close to the ship is small-town librarian Myrtle Botts.",
         "object": {
           "text": "small-town librarian Myrtle Botts"
         },
@@ -310,9 +283,9 @@
       },
       {
         "subject": {
-          "text": "the strangeness and severity of the land: Moonlight Canyon, Hellhole Canyon, Indian Gorge.Try Newsweek for only $1.25 per weekTo enter the desert is to succumb to the unknowable"
+          "text": "the strangeness and severity of the land: Moonlight Canyon, Hellhole Canyon, Indian Gorge"
         },
-        "sentence": " Surrounding place names reflected the strangeness and severity of the land: Moonlight Canyon, Hellhole Canyon, Indian Gorge.Try Newsweek for only $1.25 per weekTo enter the desert is to succumb to the unknowable.",
+        "sentence": " Surrounding place names reflected the strangeness and severity of the land: Moonlight Canyon, Hellhole Canyon, Indian Gorge.",
         "object": {
           "text": "Surrounding place names"
         },
@@ -323,23 +296,6 @@
           },
           "text": "reflected",
           "normalized": "reflect"
-        }
-      },
-      {
-        "subject": {
-          "text": "Moonlight Canyon, Hellhole Canyon, Indian Gorge.Try Newsweek for only $1.25 per weekTo"
-        },
-        "sentence": " Surrounding place names reflected the strangeness and severity of the land: Moonlight Canyon, Hellhole Canyon, Indian Gorge.Try Newsweek for only $1.25 per weekTo enter the desert is to succumb to the unknowable.",
-        "object": {
-          "text": "to the unknowable"
-        },
-        "action": {
-          "verb": {
-            "text": "succumb",
-            "tense": "future"
-          },
-          "text": "is to succumb",
-          "normalized": "be to succumb"
         }
       },
       {
@@ -725,7 +681,7 @@
         "subject": {
           "text": "The moon"
         },
-        "sentence": " “The moon threw a track of shimmering light,” he wrote, directly upon “the wreck of a gallant ship, which may have gone down there centuries ago.”The route Evans took came nowhere near Canebrake Canyon, and the ship Evans claimed to see was Spanish, not Norse.",
+        "sentence": " “The moon threw a track of shimmering light,” he wrote, directly upon “the wreck of a gallant ship, which may have gone down there centuries ago.” The route Evans took came nowhere near Canebrake Canyon, and the ship Evans claimed to see was Spanish, not Norse.",
         "object": {
           "text": "a track"
         },
@@ -742,7 +698,7 @@
         "subject": {
           "text": "he"
         },
-        "sentence": " “The moon threw a track of shimmering light,” he wrote, directly upon “the wreck of a gallant ship, which may have gone down there centuries ago.”The route Evans took came nowhere near Canebrake Canyon, and the ship Evans claimed to see was Spanish, not Norse.",
+        "sentence": " “The moon threw a track of shimmering light,” he wrote, directly upon “the wreck of a gallant ship, which may have gone down there centuries ago.” The route Evans took came nowhere near Canebrake Canyon, and the ship Evans claimed to see was Spanish, not Norse.",
         "object": {
           "text": "The moon threw a track of shimmering light"
         },
@@ -759,7 +715,7 @@
         "subject": {
           "text": "a gallant ship"
         },
-        "sentence": " “The moon threw a track of shimmering light,” he wrote, directly upon “the wreck of a gallant ship, which may have gone down there centuries ago.”The route Evans took came nowhere near Canebrake Canyon, and the ship Evans claimed to see was Spanish, not Norse.",
+        "sentence": " “The moon threw a track of shimmering light,” he wrote, directly upon “the wreck of a gallant ship, which may have gone down there centuries ago.” The route Evans took came nowhere near Canebrake Canyon, and the ship Evans claimed to see was Spanish, not Norse.",
         "object": {
           "text": "gone down there centuries"
         },
@@ -776,7 +732,7 @@
         "subject": {
           "text": "Evans"
         },
-        "sentence": " “The moon threw a track of shimmering light,” he wrote, directly upon “the wreck of a gallant ship, which may have gone down there centuries ago.”The route Evans took came nowhere near Canebrake Canyon, and the ship Evans claimed to see was Spanish, not Norse.",
+        "sentence": " “The moon threw a track of shimmering light,” he wrote, directly upon “the wreck of a gallant ship, which may have gone down there centuries ago.” The route Evans took came nowhere near Canebrake Canyon, and the ship Evans claimed to see was Spanish, not Norse.",
         "object": {
           "text": "nowhere"
         },
@@ -793,7 +749,7 @@
         "subject": {
           "text": "the ship Evans"
         },
-        "sentence": " “The moon threw a track of shimmering light,” he wrote, directly upon “the wreck of a gallant ship, which may have gone down there centuries ago.”The route Evans took came nowhere near Canebrake Canyon, and the ship Evans claimed to see was Spanish, not Norse.",
+        "sentence": " “The moon threw a track of shimmering light,” he wrote, directly upon “the wreck of a gallant ship, which may have gone down there centuries ago.” The route Evans took came nowhere near Canebrake Canyon, and the ship Evans claimed to see was Spanish, not Norse.",
         "object": {
           "text": "to see was Spanish, not Norse"
         },
@@ -810,7 +766,7 @@
         "subject": {
           "text": "the ship Evans"
         },
-        "sentence": " “The moon threw a track of shimmering light,” he wrote, directly upon “the wreck of a gallant ship, which may have gone down there centuries ago.”The route Evans took came nowhere near Canebrake Canyon, and the ship Evans claimed to see was Spanish, not Norse.",
+        "sentence": " “The moon threw a track of shimmering light,” he wrote, directly upon “the wreck of a gallant ship, which may have gone down there centuries ago.” The route Evans took came nowhere near Canebrake Canyon, and the ship Evans claimed to see was Spanish, not Norse.",
         "object": {
           "text": "was Spanish, not Norse"
         },
@@ -839,274 +795,392 @@
           "text": "have also seen",
           "normalized": "have also see"
         }
+      },
+      {
+        "subject": {
+          "text": "the desert ship"
+        },
+        "sentence": " Like all great legends, the desert ship is immune to its contradictions: It is fake news for the romantic soul, offering passage into some ancient American dreamtime when blood and gold were the main currencies of civic life.",
+        "object": {
+          "text": "immune to its contradictions"
+        },
+        "action": {
+          "verb": {
+            "text": "be",
+            "tense": "present"
+          },
+          "text": "is",
+          "normalized": "be"
+        }
+      },
+      {
+        "subject": {
+          "text": "blood and gold"
+        },
+        "sentence": " Like all great legends, the desert ship is immune to its contradictions: It is fake news for the romantic soul, offering passage into some ancient American dreamtime when blood and gold were the main currencies of civic life.",
+        "object": {
+          "text": "the main currencies of civic life"
+        },
+        "action": {
+          "verb": {
+            "text": "be",
+            "tense": "past"
+          },
+          "text": "were",
+          "normalized": "be"
+        }
+      },
+      {
+        "subject": {
+          "text": "The legend"
+        },
+        "sentence": " The legend does seem, prima facie, bonkers: a craft loaded with untold riches, sailed by early-European explorers into a vast lake that once stretched over much of inland Southern California, then run aground, abandoned by its crew and covered over by centuries of sand and rock and creosote bush as that lake dried out…and now it lies a few feet below the surface, in sight of the chicken-wire fence at the back of the Desert Dunes motel, $58 a night and HBO in most rooms.",
+        "object": {
+          "text": "once stretched over much of inland Southern California, then run aground, abandoned by its crew and covered over by centuries of sand and rock and creosote bush as that lake dried out…and now it lies a few feet below the surface, in sight of the chicken-wire fence at the back of the Desert Dunes motel, $58 a night and HBO in most rooms"
+        },
+        "action": {
+          "verb": {
+            "text": "do",
+            "tense": "present"
+          },
+          "text": "does seem",
+          "normalized": "do seem"
+        }
       }
     ],
     "language": "en",
-    "keywords": [{
-        "text": "desert ship",
-        "relevance": 0.98579
-      },
-      {
-        "text": "rugged Colorado Desert",
-        "relevance": 0.929111
-      },
-      {
-        "text": "librarian Myrtle Botts",
-        "relevance": 0.922312
-      },
-      {
-        "text": "Canebrake Canyon",
-        "relevance": 0.861843
-      },
-      {
-        "text": "Desert Dunes motel",
-        "relevance": 0.856763
-      },
-      {
-        "text": "Albert S. Evans",
-        "relevance": 0.849325
-      },
-      {
-        "text": "Southern California",
-        "relevance": 0.845565
-      },
-      {
-        "text": "ancient American dreamtime",
-        "relevance": 0.83079
-      },
-      {
-        "text": "World Trade Center",
-        "relevance": 0.828227
-      },
+    "keywords": [
       {
         "text": "treasure ship",
-        "relevance": 0.795288
+        "relevance": 0.678253,
+        "count": 1
+      },
+      {
+        "text": "rugged Colorado Desert of California",
+        "relevance": 0.633605,
+        "count": 1
+      },
+      {
+        "text": "small-town librarian Myrtle Botts",
+        "relevance": 0.602635,
+        "count": 1
       },
       {
         "text": "Anza-Borrego Desert",
-        "relevance": 0.790321
+        "relevance": 0.574586,
+        "count": 1
       },
       {
-        "text": "ship Evans",
-        "relevance": 0.782791
+        "text": "great legends",
+        "relevance": 0.563368,
+        "count": 1
       },
       {
-        "text": "Viking ship",
-        "relevance": 0.779153
-      },
-      {
-        "text": "desert flora",
-        "relevance": 0.771872
-      },
-      {
-        "text": "gallant ship",
-        "relevance": 0.767433
-      },
-      {
-        "text": "desert conservation",
-        "relevance": 0.765279
-      },
-      {
-        "text": "Hellhole Canyon",
-        "relevance": 0.752794
-      },
-      {
-        "text": "Moonlight Canyon",
-        "relevance": 0.752342
-      },
-      {
-        "text": "Spanish explorers",
-        "relevance": 0.751603
-      },
-      {
-        "text": "riotous invasion",
-        "relevance": 0.749868
-      },
-      {
-        "text": "Agua Caliente",
-        "relevance": 0.747739
-      },
-      {
-        "text": "washed-out yellows",
-        "relevance": 0.7476
-      },
-      {
-        "text": "Viking craft",
-        "relevance": 0.741184
-      },
-      {
-        "text": "wooden remains",
-        "relevance": 0.739948
-      },
-      {
-        "text": "place names",
-        "relevance": 0.738934
-      },
-      {
-        "text": "Indian Gorge.Try",
-        "relevance": 0.7386
-      },
-      {
-        "text": "route Evans",
-        "relevance": 0.737684
-      },
-      {
-        "text": "new species",
-        "relevance": 0.737257
-      },
-      {
-        "text": "rugged hike",
-        "relevance": 0.736874
-      },
-      {
-        "text": "Lake Cahuilla",
-        "relevance": 0.735257
-      },
-      {
-        "text": "weekTo enter",
-        "relevance": 0.733836
-      },
-      {
-        "text": "serpentine figure",
-        "relevance": 0.732898
-      },
-      {
-        "text": "couple’s camp",
-        "relevance": 0.731863
+        "text": "explorer Albert S. Evans",
+        "relevance": 0.559745,
+        "count": 1
       },
       {
         "text": "time Myrtle",
-        "relevance": 0.731354
+        "relevance": 0.557398,
+        "count": 1
       },
       {
-        "text": "magnitude earthquake",
-        "relevance": 0.730729
-      },
-      {
-        "text": "tiny settlement",
-        "relevance": 0.730188
-      },
-      {
-        "text": "untold riches",
-        "relevance": 0.728527
-      },
-      {
-        "text": "Baja California",
-        "relevance": 0.728317
-      },
-      {
-        "text": "Huntington Beach",
-        "relevance": 0.728055
-      },
-      {
-        "text": "dead sea",
-        "relevance": 0.726834
-      },
-      {
-        "text": "evening primrose",
-        "relevance": 0.726647
+        "text": "early March",
+        "relevance": 0.554323,
+        "count": 1
       },
       {
         "text": "San Bernardino",
-        "relevance": 0.725582
+        "relevance": 0.546636,
+        "count": 1
       },
       {
-        "text": "creosote bush",
-        "relevance": 0.724029
+        "text": "World Trade Center site",
+        "relevance": 0.545634,
+        "count": 1
       },
       {
-        "text": "centuries ago.",
-        "relevance": 0.723927
+        "text": "Spanish explorers",
+        "relevance": 0.539944,
+        "count": 1
       },
       {
-        "text": "rocky face",
-        "relevance": 0.723133
-      },
-      {
-        "text": "main currencies",
-        "relevance": 0.723121
-      },
-      {
-        "text": "Black Sea",
-        "relevance": 0.723031
-      },
-      {
-        "text": "early-European explorers",
-        "relevance": 0.722897
-      },
-      {
-        "text": "vast lake",
-        "relevance": 0.722109
+        "text": "Southern California",
+        "relevance": 0.538122,
+        "count": 1
       },
       {
         "text": "fake news",
-        "relevance": 0.721679
+        "relevance": 0.535933,
+        "count": 1
+      },
+      {
+        "text": "Lake Cahuilla",
+        "relevance": 0.531683,
+        "count": 1
+      },
+      {
+        "text": "magnitude earthquake",
+        "relevance": 0.529386,
+        "count": 1
+      },
+      {
+        "text": "hallmarks of a Viking craft",
+        "relevance": 0.529378,
+        "count": 1
+      },
+      {
+        "text": "riotous invasion of wildflowers",
+        "relevance": 0.526639,
+        "count": 1
+      },
+      {
+        "text": "European explorers",
+        "relevance": 0.526194,
+        "count": 1
+      },
+      {
+        "text": "wooden remains",
+        "relevance": 0.5261,
+        "count": 1
+      },
+      {
+        "text": "lower Manhattan",
+        "relevance": 0.525911,
+        "count": 1
+      },
+      {
+        "text": "Moonlight Canyon",
+        "relevance": 0.524771,
+        "count": 1
+      },
+      {
+        "text": "recent advances",
+        "relevance": 0.523816,
+        "count": 1
+      },
+      {
+        "text": "sight of the chicken-wire fence",
+        "relevance": 0.523522,
+        "count": 1
+      },
+      {
+        "text": "legend",
+        "relevance": 0.522402,
+        "count": 2
+      },
+      {
+        "text": "Huntington Beach",
+        "relevance": 0.520237,
+        "count": 1
+      },
+      {
+        "text": "farther south",
+        "relevance": 0.519995,
+        "count": 1
+      },
+      {
+        "text": "Baja California",
+        "relevance": 0.51933,
+        "count": 1
+      },
+      {
+        "text": "new species of desert flora",
+        "relevance": 0.518399,
+        "count": 1
+      },
+      {
+        "text": "route Evans",
+        "relevance": 0.518141,
+        "count": 1
+      },
+      {
+        "text": "place names",
+        "relevance": 0.517965,
+        "count": 1
+      },
+      {
+        "text": "Viking ship",
+        "relevance": 0.517589,
+        "count": 1
+      },
+      {
+        "text": "vessel",
+        "relevance": 0.517503,
+        "count": 2
+      },
+      {
+        "text": "episode",
+        "relevance": 0.515696,
+        "count": 1
+      },
+      {
+        "text": "rocky face of Canebrake Canyon",
+        "relevance": 0.515254,
+        "count": 1
+      },
+      {
+        "text": "sightings of the desert ship",
+        "relevance": 0.514822,
+        "count": 1
+      },
+      {
+        "text": "out yellows",
+        "relevance": 0.514108,
+        "count": 1
+      },
+      {
+        "text": "wooden sloop",
+        "relevance": 0.513934,
+        "count": 1
+      },
+      {
+        "text": "romantic soul",
+        "relevance": 0.513202,
+        "count": 1
+      },
+      {
+        "text": "prima facie",
+        "relevance": 0.513119,
+        "count": 1
+      },
+      {
+        "text": "rugged hike",
+        "relevance": 0.513062,
+        "count": 1
+      },
+      {
+        "text": "couple’s camp",
+        "relevance": 0.512627,
+        "count": 1
+      },
+      {
+        "text": "vast lake",
+        "relevance": 0.511903,
+        "count": 1
+      },
+      {
+        "text": "moon",
+        "relevance": 0.511708,
+        "count": 1
+      },
+      {
+        "text": "Agua Caliente",
+        "relevance": 0.510988,
+        "count": 1
+      },
+      {
+        "text": "rocks",
+        "relevance": 0.510365,
+        "count": 1
+      },
+      {
+        "text": "back of the Desert Dunes motel",
+        "relevance": 0.510266,
+        "count": 1
+      },
+      {
+        "text": "wreck of a gallant ship",
+        "relevance": 0.510187,
+        "count": 1
+      },
+      {
+        "text": "Botts",
+        "relevance": 0.50997,
+        "count": 2
+      },
+      {
+        "text": "ancient American dreamtime",
+        "relevance": 0.509831,
+        "count": 1
+      },
+      {
+        "text": "bloom",
+        "relevance": 0.50971,
+        "count": 1
       }
     ],
-    "entities": [{
+    "entities": [
+      {
         "type": "GeographicFeature",
         "text": "Anza-Borrego Desert",
-        "relevance": 0.888559,
+        "relevance": 0.854741,
         "count": 4
       },
       {
         "type": "Person",
         "text": "Myrtle Botts",
-        "relevance": 0.764168,
-        "count": 6
+        "relevance": 0.830275,
+        "count": 7
       },
       {
         "type": "GeographicFeature",
         "text": "Colorado Desert",
-        "relevance": 0.586841,
+        "relevance": 0.576799,
         "count": 1
       },
       {
         "type": "Person",
         "text": "Albert S. Evans",
-        "relevance": 0.532221,
+        "relevance": 0.510277,
         "count": 4
       },
       {
         "type": "GeographicFeature",
         "text": "Canebrake Canyon",
-        "relevance": 0.476537,
+        "relevance": 0.464834,
         "count": 2
       },
       {
         "type": "GeographicFeature",
         "text": "Desert Dunes",
-        "relevance": 0.450513,
+        "relevance": 0.442795,
         "count": 1
       },
       {
         "type": "Location",
         "text": "Southern California",
-        "relevance": 0.417814,
+        "relevance": 0.40807,
+        "disambiguation": {
+          "subtype": [
+            "Region"
+          ]
+        },
         "count": 2
       },
       {
         "type": "Location",
         "text": "Mexico",
-        "relevance": 0.410583,
+        "relevance": 0.398995,
+        "disambiguation": {
+          "subtype": [
+            "Country"
+          ]
+        },
         "count": 2
       },
       {
         "type": "GeographicFeature",
         "text": "Moonlight Canyon",
-        "relevance": 0.379001,
+        "relevance": 0.379281,
         "count": 1
       },
       {
         "type": "Location",
         "text": "California",
-        "relevance": 0.368536,
+        "relevance": 0.363336,
+        "disambiguation": {
+          "subtype": [
+            "StateOrCounty"
+          ]
+        },
         "count": 1
       },
       {
         "type": "Company",
         "text": "Facebook",
-        "relevance": 0.34503,
+        "relevance": 0.353992,
         "disambiguation": {
           "subtype": [
             "Website",
@@ -1120,13 +1194,13 @@
       {
         "type": "GeographicFeature",
         "text": "Agua Caliente",
-        "relevance": 0.333943,
+        "relevance": 0.328523,
         "count": 1
       },
       {
         "type": "Facility",
         "text": "World Trade Center",
-        "relevance": 0.332581,
+        "relevance": 0.327814,
         "disambiguation": {
           "subtype": [
             "Location",
@@ -1141,7 +1215,7 @@
       {
         "type": "Location",
         "text": "San Bernardino",
-        "relevance": 0.322571,
+        "relevance": 0.319157,
         "disambiguation": {
           "subtype": [
             "PlaceWithNeighborhoods",
@@ -1155,7 +1229,7 @@
       {
         "type": "GeographicFeature",
         "text": "Black Sea",
-        "relevance": 0.321364,
+        "relevance": 0.316259,
         "disambiguation": {
           "subtype": [
             "Location",
@@ -1170,25 +1244,36 @@
       {
         "type": "Location",
         "text": "Baja California",
-        "relevance": 0.316981,
+        "relevance": 0.313614,
+        "disambiguation": {
+          "subtype": [
+            "City"
+          ]
+        },
+        "count": 1
+      },
+      {
+        "type": "GeographicFeature",
+        "text": "Indian Gorge",
+        "relevance": 0.307322,
         "count": 1
       },
       {
         "type": "GeographicFeature",
         "text": "Lake Cahuilla",
-        "relevance": 0.310636,
+        "relevance": 0.306655,
         "count": 1
       },
       {
         "type": "GeographicFeature",
         "text": "Huntington Beach",
-        "relevance": 0.310455,
+        "relevance": 0.30613,
         "count": 1
       },
       {
         "type": "Location",
         "text": "Manhattan",
-        "relevance": 0.308959,
+        "relevance": 0.304195,
         "disambiguation": {
           "subtype": [
             "GeographicFeature",
@@ -1205,37 +1290,55 @@
         "count": 1
       },
       {
-        "type": "Company",
-        "text": "Newsweek",
-        "relevance": 0.304619,
+        "type": "Broadcaster",
+        "text": "HBO",
+        "relevance": 0.280288,
+        "disambiguation": {
+          "subtype": [
+            "TelevisionStation"
+          ]
+        },
         "count": 1
       },
       {
-        "type": "Broadcaster",
-        "text": "HBO",
-        "relevance": 0.283998,
+        "type": "Quantity",
+        "text": "800 years",
+        "relevance": 0.280288,
+        "count": 1
+      },
+      {
+        "type": "Quantity",
+        "text": "60 years",
+        "relevance": 0.280288,
+        "count": 1
+      },
+      {
+        "type": "Quantity",
+        "text": "$58",
+        "relevance": 0.280288,
         "count": 1
       }
     ],
     "emotion": {
       "document": {
         "emotion": {
-          "sadness": 0.530708,
-          "joy": 0.198117,
-          "fear": 0.516278,
-          "disgust": 0.462995,
-          "anger": 0.127806
+          "sadness": 0.510395,
+          "joy": 0.465514,
+          "fear": 0.087964,
+          "disgust": 0.129827,
+          "anger": 0.15183
         }
       }
     },
-    "concepts": [{
+    "concepts": [
+      {
         "text": "Colorado Desert",
-        "relevance": 0.949919,
+        "relevance": 0.949924,
         "dbpedia_resource": "http://dbpedia.org/resource/Colorado_Desert"
       },
       {
         "text": "Sonoran Desert",
-        "relevance": 0.839597,
+        "relevance": 0.841144,
         "dbpedia_resource": "http://dbpedia.org/resource/Sonoran_Desert"
       },
       {
@@ -1245,43 +1348,40 @@
       },
       {
         "text": "Mojave Desert",
-        "relevance": 0.69266,
+        "relevance": 0.69398,
         "dbpedia_resource": "http://dbpedia.org/resource/Mojave_Desert"
       },
       {
         "text": "Anza-Borrego Desert State Park",
-        "relevance": 0.670016,
+        "relevance": 0.671039,
         "dbpedia_resource": "http://dbpedia.org/resource/Anza-Borrego_Desert_State_Park"
       },
       {
         "text": "Imperial County, California",
-        "relevance": 0.65157,
+        "relevance": 0.652692,
         "dbpedia_resource": "http://dbpedia.org/resource/Imperial_County,_California"
       },
       {
         "text": "Salton Sea",
-        "relevance": 0.593492,
+        "relevance": 0.594352,
         "dbpedia_resource": "http://dbpedia.org/resource/Salton_Sea"
       },
       {
         "text": "Prima facie",
-        "relevance": 0.541083,
+        "relevance": 0.542887,
         "dbpedia_resource": "http://dbpedia.org/resource/Prima_facie"
       }
     ],
-    "categories": [{
-        "score": 0.587371,
-        "label": "/travel/tourist destinations/mexico and central america"
+    "categories": [
+      {
+        "score": 0.965124,
+        "label": "/travel/transports/sea travel"
       },
       {
-        "score": 0.438928,
-        "label": "/home and garden"
-      },
-      {
-        "score": 0.329439,
-        "label": "/science/geology/seismology/earthquakes"
+        "score": 0.663114,
+        "label": "/society/unrest and war"
       }
-    ],
-    "language": "en"
+    ]
   }
+
 }
