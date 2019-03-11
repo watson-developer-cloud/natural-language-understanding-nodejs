@@ -63,7 +63,7 @@ export default React.createClass({
         text: PropTypes.string,
         part_of_speech: PropTypes.string,
         lemma: PropTypes.string,
-        })),
+      })),
     }),
     language: PropTypes.string,
   },
