@@ -8,3 +8,5 @@ logs/
 coverage/
 .idea
 .vscode
+Bluemix_CLI*
+IBM_Cloud_CLI_*
