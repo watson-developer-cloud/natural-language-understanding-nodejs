@@ -82,7 +82,7 @@ function Output(props) {
             </Pane>
             <Pane label="Syntax">
               <Syntax
-                data={props.data.results.syntax.tokens}
+                data={props.data.results.syntax}
                 language={languages.getLanguageName(props.language)}
               />
             </Pane>
