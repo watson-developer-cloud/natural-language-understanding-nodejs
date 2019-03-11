@@ -58,11 +58,13 @@ export default React.createClass({
   displayName: 'Syntax',
 
   propTypes: {
-    data: PropTypes.arrayOf(PropTypes.shape({
-      text: PropTypes.string,
-      part_of_speech: PropTypes.string,
-      lemma: PropTypes.string,
-    })),
+    data: PropTypes.shape({
+        tokens: PropTypes.arrayOf(PropTypes.shape({
+            text: PropTypes.string,
+            part_of_speech: PropTypes.string,
+            lemma: PropTypes.string,
+        })),
+    }),
     language: PropTypes.string,
   },
 
@@ -78,7 +80,7 @@ export default React.createClass({
   },
 
   onWaypoint() {
-    if (this.state.visibleItems < this.props.data.length) {
+    if (this.state.visibleItems < this.props.data.tokens.length) {
       setTimeout(() => {
         this.setState({
           visibleItems: this.state.visibleItems + 10,
@@ -98,12 +100,12 @@ export default React.createClass({
           onShowJson={this.toggleJson}
         >
 		{console.log(this.props.data)}
-          {this.props.data && this.props.data.length > 0 ? (
+          {this.props.data && this.props.data.tokens && this.props.data.tokens.length > 0 ? (
             <div>
               <Table
                 columns={['Token', 'Part of Speech', 'Lemma']}
                 theme={tableTheme}
-                data={this.props.data.reduce((acc, item) => {
+                data={this.props.data.tokens.reduce((acc, item) => {
                   acc.push({ Token: item.text,
                     'Part of Speech': item.part_of_speech,
                     Lemma: item.lemma });
