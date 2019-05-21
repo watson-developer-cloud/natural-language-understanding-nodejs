@@ -15,6 +15,8 @@ let index = 0;
 let currentInput;
 const buttonBreakpoint = '400px';
 
+const TERMS_OF_USE_URL = 'https://watson-developer-cloud.github.io/terms?name=Natural%20Language%20Understanding%20Demo';
+
 const styles = StyleSheet.create({
   container: {
     maxWidth: parser(`${MAX_CONTENT_WIDTH} - 1rem`),
@@ -167,6 +169,12 @@ const Input = React.createClass({
           necessary controls in place to meet the requirements of the General Data Protection Regulation (EU)
           2016/679.
         </p>
+        <div className={css(styles.footnote)}>
+          By using this application, you agree to the&nbsp;
+          <a target="_blank" rel="noreferrer noopener" href={TERMS_OF_USE_URL}>
+            Terms of Use
+          </a>
+        </div>
         <div className={css(styles.buttonContainer)}>
           <button
             disabled={this.props.disableButton}
