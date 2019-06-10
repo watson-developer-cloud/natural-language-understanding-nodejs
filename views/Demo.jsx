@@ -2,6 +2,7 @@ import React from 'react';
 import scrollToElement from 'scroll-to-element';
 import Input from './Input.jsx';
 import Output from './Output/Output.jsx';
+import FloatingCta from './FloatingCta.jsx';
 import { analyzeWithAllFeatures } from './utils/request';
 
 // eslint-disable-next-line
@@ -55,7 +56,12 @@ export default React.createClass({
     } = this.state;
 
     return (
-      <div className="_container _container_large">
+      <div className="demo _container _container_large">
+        <FloatingCta
+          link="https://cloud.ibm.com/registration/?target=%2Fcatalog%2Fservices%2Fnatural-language-understanding%3FhideTours%3Dtrue%26cm_mmc%3D-_-Watson%2BCore_Watson%2BCore%2B-%2BPlatform-_-WW_WW-_-wdc-ref%26cm_mmc%3D-_-Watson%2BCore_Watson%2BCore%2B-%2BPlatform-_-WW_WW-_-wdc-ref%26cm_mmca1%3D000000OF%26cm_mmca2%3D10000409"
+          label="Start for free in IBM Cloud"
+          isVisible={(data !== null)}
+        />
         <Input
           text={DEFAULT_TEXT}
           url={DEFAULT_URL}
