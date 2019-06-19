@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     display: 'block',
     opacity: 1,
   },
-  label: {
+  ctalabel: {
     color: '#FFFFFF',
   },
 });
@@ -40,7 +40,7 @@ const FloatingCta = ({
 
   return (
     <a className={combinedVisibleStyles} href={link} rel="noreferrer noopener" target="_blank">
-      <p className={css(styles.label)}>{label}</p>
+      <p className={css(styles.ctalabel)}>{label}</p>
     </a>
   );
 };
