@@ -5,7 +5,7 @@ import { StyleSheet, css } from 'aphrodite/no-important';
 const styles = StyleSheet.create({
   container: {
     position: 'fixed',
-    bottom: '2rem',
+    bottom: '4rem',
     right: '2rem',
     paddingRight: '3em',
     paddingLeft: '3em',
