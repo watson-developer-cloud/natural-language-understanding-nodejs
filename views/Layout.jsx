@@ -19,7 +19,7 @@ export default function Layout(props) {
         <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="/css/watson-react-components.min.css" />
         <link rel="stylesheet" href="/css/style.css" />
-        <style date-aphrodite>
+        <style data-aphrodite>
           {css.content}
         </style>
         <script type="text/javascript" src="scripts/bundle.js" defer async />
