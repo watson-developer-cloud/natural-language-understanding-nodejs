@@ -1,7 +1,7 @@
 language: node_js
 dist: trusty
 sudo: required
-node_js: 8
+node_js: 12
 script:
 - npm run test
 
@@ -27,4 +27,4 @@ deploy:
   skip_cleanup: true
   script: npx semantic-release
   on:
-    node: 8
+    node: 12
