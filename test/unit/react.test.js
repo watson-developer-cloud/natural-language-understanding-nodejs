@@ -19,7 +19,8 @@ const ReactDOMServer = require('react-dom/server');
 const handleError = require('../utils/handleError');
 require('@babel/register');
 
-describe('react', () => {
+describe('react', function reactTest() {
+  this.timeout(10000);
   it('should render some html', (done) => {
     handleError(done, () => {
       const index = require('../../views/index.jsx').default;
