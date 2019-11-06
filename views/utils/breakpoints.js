@@ -11,7 +11,7 @@ const breakpointsSource = [
 ];
 
 // Container names
-export const breakpointsArr = breakpointsSource.map(e => e[0]);
+export const breakpointsArr = breakpointsSource.map((e) => e[0]);
 // Containers object
 export const breakpointsObj = breakpointsSource.reduce(
   (prev, next) => {
@@ -30,4 +30,4 @@ export const breakpointsObj = breakpointsSource.reduce(
  * @param  {string} breakpoint   css unit value (i.e. 10px, 2rem, etc.)
  * @return {string} media query string
  */
-export const breakpoint = breakpt => `@media (min-width: ${breakpt})`;
+export const breakpoint = (breakpt) => `@media (min-width: ${breakpt})`;

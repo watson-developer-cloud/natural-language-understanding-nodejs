@@ -31,71 +31,67 @@ const styles = StyleSheet.create({
 });
 
 function Output(props) {
+  const { loading, data, language, query } = props;
   return (
     <div>
-      { props.loading ?
+      {loading ? (
         <div className={css(styles.loader)}>
           <Icon type="loader" size="large" />
         </div>
-        : null
-      }
-      { props.data !== null && !props.loading ?
+      ) : null}
+      {data !== null && !loading ? (
         <div className={`output-section ${css(styles.outputSection)}`}>
           <Tabs selected={0}>
             <Pane label="Sentiment">
               <Sentiment
-                data={props.data.results.sentiment}
-                language={languages.getLanguageName(props.language)}
-                query={props.query}
+                data={data.results.sentiment}
+                language={languages.getLanguageName(language)}
+                query={query}
               />
             </Pane>
             <Pane label="Emotion">
               <Emotion
-                data={props.data.results.emotion}
-                language={languages.getLanguageName(props.language)}
-                query={props.query}
+                data={data.results.emotion}
+                language={languages.getLanguageName(language)}
+                query={query}
               />
             </Pane>
             <Pane label="Keywords">
               <Keywords
-                data={props.data.results.keywords}
-                language={languages.getLanguageName(props.language)}
+                data={data.results.keywords}
+                language={languages.getLanguageName(language)}
               />
             </Pane>
             <Pane label="Entities">
               <Entities
-                data={props.data.results.entities}
-                language={languages.getLanguageName(props.language)}
+                data={data.results.entities}
+                language={languages.getLanguageName(language)}
               />
             </Pane>
             <Pane label="Categories">
               <Categories
-                data={props.data.results.categories}
-                language={languages.getLanguageName(props.language)}
+                data={data.results.categories}
+                language={languages.getLanguageName(language)}
               />
             </Pane>
             <Pane label="Concept">
               <Concept
-                data={props.data.results.concepts}
-                language={languages.getLanguageName(props.language)}
+                data={data.results.concepts}
+                language={languages.getLanguageName(language)}
               />
             </Pane>
             <Pane label="Syntax">
-              <Syntax
-                data={props.data.results.syntax}
-                language={languages.getLanguageName(props.language)}
-              />
+              <Syntax data={data.results.syntax} language={languages.getLanguageName(language)} />
             </Pane>
             <Pane label="Semantic Roles">
               <SemanticRoles
-                data={props.data.results.semantic_roles}
-                language={languages.getLanguageName(props.language)}
+                data={data.results.semantic_roles}
+                language={languages.getLanguageName(language)}
               />
             </Pane>
           </Tabs>
         </div>
-        : null
-      }
+      ) : null}
     </div>
   );
 }

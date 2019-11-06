@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import OutputTemplate from './OutputTemplate.jsx';
 import { colors } from '../utils/colors';
 import { weight } from '../utils/typography';
+import OutputTemplate from './OutputTemplate.jsx';
 
 const styles = StyleSheet.create({
   sentence: {
@@ -45,11 +45,13 @@ const styles = StyleSheet.create({
 
 const escapeRegExp = text => text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
 
-const replacements = (props) => {
+const replacements = props => {
   const res = ['action', 'object', 'subject'].reduce((acc, item) => {
     if (props.data[item]) {
       const replaceText = props.data[item].text;
-      const withText = `<span class=${css(styles.token)}><span class=${css(styles.innerToken)}> ${props.data[item].text}&nbsp;</span><span class='${css(styles.label)}'>${item}</span></span>`;
+      const withText = `<span class=${css(styles.token)}><span class=${css(styles.innerToken)}> ${
+        props.data[item].text
+      }&nbsp;</span><span class='${css(styles.label)}'>${item}</span></span>`;
       const regex = new RegExp(`\\b${escapeRegExp(replaceText)}\\b`);
       return acc.replace(regex, withText);
     }
@@ -67,18 +69,20 @@ replacements.defaultProps = {
 };
 
 const SemSent = props => (
-  <div className={css(styles.sentence)} >
+  <div className={css(styles.sentence)}>
     <div dangerouslySetInnerHTML={replacements(props)} />
   </div>
 );
 
+const SemSentences = props => (
+  <div className="sentences">
+    {props.data.map((item, i) => (
+      <SemSent key={`sem-sent-${item.sentence}${i}`} data={item} />
+    ))}
+  </div>
+);
 
-const SemSentences = props =>
-  <div className="sentences">{props.data.map(item => <SemSent key={`sem-sent-${item}`} data={item} />)}</div>;
-
-SemSentences.propTypes = {
-  data: PropTypes.arrayof,
-};
+SemSentences.propTypes = {};
 
 SemSentences.defaultProps = {
   data: [],
@@ -88,7 +92,7 @@ export default React.createClass({
   displayName: 'SemanticRoles',
 
   propTypes: {
-    data: PropTypes.arrayOf,
+    data: PropTypes.arrayOf(PropTypes.shape()),
     language: PropTypes.string,
   },
 
@@ -103,17 +107,30 @@ export default React.createClass({
   },
 
   render() {
+    const data = this.props;
     return (
       <div>
         <OutputTemplate
-          description={<p className="base--p_small">Parse sentences into subject, action, and object form and view additional <a href="https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/#semantic-roles" target="_blank" rel="noopener noreferrer">semantic information</a> such as keywords, entities, sentiment, and verb normalization.</p>}
-          data={{ semantic_roles: this.props.data }}
+          description={
+            <p className="base--p_small">
+              Parse sentences into subject, action, and object form and view additional{' '}
+              <a
+                href="https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/#semantic-roles"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                semantic information
+              </a>{' '}
+              such as keywords, entities, sentiment, and verb normalization.
+            </p>
+          }
+          data={{ semantic_roles: data.data }}
           showJson={this.state.showJson}
           onExitJson={this.toggleJson}
           onShowJson={this.toggleJson}
         >
-          {this.props.data && this.props.data.length > 0 ? (
-            <SemSentences data={this.props.data} />
+          {data && data.data.length > 0 ? (
+            <SemSentences data={data.data} />
           ) : (
             <p>{`No Semantic Roles results returned for ${this.props.language} input.`}</p>
           )}
