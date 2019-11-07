@@ -16,5 +16,6 @@ export default function Index() {
   return (
     <Layout css={css}>
       {(new HtmlToReact.Parser(React)).parse(html)}
-    </Layout>);
+    </Layout>
+  );
 }

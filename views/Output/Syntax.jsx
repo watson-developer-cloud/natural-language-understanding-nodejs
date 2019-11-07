@@ -59,11 +59,13 @@ export default React.createClass({
 
   propTypes: {
     data: PropTypes.shape({
-      tokens: PropTypes.arrayOf(PropTypes.shape({
-        text: PropTypes.string,
-        part_of_speech: PropTypes.string,
-        lemma: PropTypes.string,
-      })),
+      tokens: PropTypes.arrayOf(
+        PropTypes.shape({
+          text: PropTypes.string,
+          part_of_speech: PropTypes.string,
+          lemma: PropTypes.string,
+        })
+      ),
     }),
     language: PropTypes.string,
   },
@@ -93,24 +95,39 @@ export default React.createClass({
     return (
       <div>
         <OutputTemplate
-          description={<p className="base--p_small">Identify <a href="https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/#syntax" target="_blank" rel="noopener noreferrer">tokens</a>, part of speech, sentence boundaries and lemmas in the text</p>}
+          description={
+            <p className="base--p_small">
+              Identify{' '}
+              <a
+                href="https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/#syntax"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                tokens
+              </a>
+              , part of speech, sentence boundaries and lemmas in the text
+            </p>
+          }
           data={{ syntax: this.props.data }}
           showJson={this.state.showJson}
           onExitJson={this.toggleJson}
           onShowJson={this.toggleJson}
         >
-		{console.log(this.props.data)}
           {this.props.data && this.props.data.tokens && this.props.data.tokens.length > 0 ? (
             <div>
               <Table
                 columns={['Token', 'Part of Speech', 'Lemma']}
                 theme={tableTheme}
-                data={this.props.data.tokens.reduce((acc, item) => {
-                  acc.push({ Token: item.text,
-                    'Part of Speech': item.part_of_speech,
-                    Lemma: item.lemma });
-                  return acc;
-                }, []).filter((val, i) => i <= this.state.visibleItems)}
+                data={this.props.data.tokens
+                  .reduce((acc, item) => {
+                    acc.push({
+                      Token: item.text,
+                      'Part of Speech': item.part_of_speech,
+                      Lemma: item.lemma,
+                    });
+                    return acc;
+                  }, [])
+                  .filter((val, i) => i <= this.state.visibleItems)}
               />
               <Waypoint onEnter={this.onWaypoint} />
             </div>

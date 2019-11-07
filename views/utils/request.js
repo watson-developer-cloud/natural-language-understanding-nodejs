@@ -37,7 +37,7 @@ const handleErrors = (response) => {
  * @param  {Object} params The parameters
  * @return {Promise}       The request promise
  */
-export const analyze = params => fetch('/api/analyze', {
+export const analyze = (params) => fetch('/api/analyze', {
   method: 'POST',
   headers: { 'content-type': 'application/json' },
   body: JSON.stringify(params),
@@ -54,6 +54,6 @@ export const analyze = params => fetch('/api/analyze', {
  * @return {Promise}        The request promise
  */
 export const analyzeWithAllFeatures = (params) => {
-  const query = Object.assign({}, FEATURES, params);
+  const query = { ...FEATURES, ...params };
   return analyze(query);
 };

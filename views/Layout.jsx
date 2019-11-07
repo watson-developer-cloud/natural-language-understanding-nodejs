@@ -10,7 +10,9 @@ export default function Layout(props) {
   return (
     <html lang="en">
       <head>
-        <title>{demoName} Demo</title>
+        <title>
+          {`${demoName} Demo`}
+        </title>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -34,10 +36,10 @@ export default function Layout(props) {
         <Jumbotron
           serviceName={demoName}
           repository="https://github.com/watson-developer-cloud/natural-language-understanding-nodejs"
-          documentation="https://console.bluemix.net/docs/services/natural-language-understanding/getting-started.html"
-          apiReference="http://www.ibm.com/watson/developercloud/natural-language-understanding/api"
+          documentation="https://cloud.ibm.com/docs/services/natural-language-understanding/getting-started.html"
+          apiReference="https://cloud.ibm.com/apidocs/natural-language-understanding/natural-language-understanding"
           version="GA"
-          startInBluemix="https://console.bluemix.net/registration/?target=%2Fcatalog%2Fservices%2Fnatural-language-understanding%3FhideTours%3Dtrue%26cm_mmc%3D-_-Watson%2BCore_Watson%2BCore%2B-%2BPlatform-_-WW_WW-_-wdc-ref%26cm_mmc%3D-_-Watson%2BCore_Watson%2BCore%2B-%2BPlatform-_-WW_WW-_-wdc-ref%26cm_mmca1%3D000000OF%26cm_mmca2%3D10000409"
+          startInBluemix="https://cloud.ibm.com/registration/?target=%2Fcatalog%2Fservices%2Fnatural-language-understanding%3FhideTours%3Dtrue%26cm_mmc%3D-_-Watson%2BCore_Watson%2BCore%2B-%2BPlatform-_-WW_WW-_-wdc-ref%26cm_mmc%3D-_-Watson%2BCore_Watson%2BCore%2B-%2BPlatform-_-WW_WW-_-wdc-ref%26cm_mmca1%3D000000OF%26cm_mmca2%3D10000409"
           description={DESCRIPTION}
         />
         <div id="root">

@@ -1,30 +1,25 @@
 language: node_js
-dist: trusty
 sudo: required
 node_js: 12
 script:
-- npm run test
-
+  - npm run test
 cache:
   directories:
-  - node_modules
+    - node_modules
 env:
   global:
-  - BX_APP=natural-language-understanding-demo
-  - BX_API=https://api.ng.bluemix.net
-  - BX_ORGANIZATION=WatsonPlatformServices
-  - BX_SPACE=demos
+    - BX_APP=natural-language-understanding-demo
+    - BX_API=https://api.ng.bluemix.net
+    - BX_ORGANIZATION=WatsonPlatformServices
+    - BX_SPACE=demos
 before_deploy: npm install -g bx-blue-green
 deploy:
-- provider: script
-  skip_cleanup: true
-  script:
-  - bx-blue-green-travis
-  on:
-    branch: master
-    repo: watson-developer-cloud/natural-language-understanding-nodejs
-- provider: script
-  skip_cleanup: true
-  script: npx semantic-release
-  on:
-    node: 12
+  - provider: script
+    skip_cleanup: true
+    script: bx-blue-green-travis
+    on:
+      branch: master
+      repo: watson-developer-cloud/natural-language-understanding-nodejs
+  - provider: script
+    skip_cleanup: true
+    script: npx semantic-release
