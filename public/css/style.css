@@ -188,3 +188,7 @@ pre[class*="language"] {
   color: #aeaeae;
   font-size: 0.7rem;
 }
+
+.new_demo_notification {
+  max-width: 48rem;
+}
