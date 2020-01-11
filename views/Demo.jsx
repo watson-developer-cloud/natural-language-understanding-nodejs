@@ -68,7 +68,7 @@ export default React.createClass({
         <div className="new_demo_notification">
           <Alert type="info" color="blue">
             {NEW_DEMO_NOTIFICATION}
-            <a href="http://dte-nlu-demo.mybluemix.net/" target="blank">
+            <a href="https://dte-nlu-demo.mybluemix.net/self-service/home" target="blank">
               here.
             </a>
           </Alert>
