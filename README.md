@@ -1,4 +1,9 @@
+<h1 align="center" style="border-bottom: none;">*** DEPRECATED ***</h1>
 <h1 align="center" style="border-bottom: none;">🚀 Natural Language Understanding Sample Application</h1>
+<h1 align="center" style="border-bottom: none;">*** DEPRECATED ***</h1>
+
+<h3 align="center">There is a new demo [here](https://xxx.com)</h3>
+
 <h3 align="center">This Node.js app demonstrates some of the Natural Language Understanding service features.</h3>
 <p align="center">
   <a href="http://travis-ci.org/watson-developer-cloud/natural-language-understanding-nodejs">
