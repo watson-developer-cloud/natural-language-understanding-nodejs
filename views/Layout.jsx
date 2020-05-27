@@ -36,7 +36,7 @@ export default function Layout(props) {
         <Jumbotron
           serviceName={demoName}
           repository="https://github.com/watson-developer-cloud/natural-language-understanding-nodejs"
-          documentation="https://cloud.ibm.com/docs/services/natural-language-understanding/getting-started.html"
+          documentation="https://cloud.ibm.com/docs/natural-language-understanding?topic=natural-language-understanding-getting-started"
           apiReference="https://cloud.ibm.com/apidocs/natural-language-understanding/natural-language-understanding"
           version="GA"
           startInBluemix="https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fnatural-language-understanding%3FhideTours%3Dtrue%26cm_mmc%3D-_-Watson%2BCore_Watson%2BCore%2B-%2BPlatform-_-WW_WW-_-wdc-ref%26cm_mmc%3D-_-Watson%2BCore_Watson%2BCore%2B-%2BPlatform-_-WW_WW-_-wdc-ref%26cm_mmca1%3D000000OF%26cm_mmca2%3D10000409&cm_sp=WatsonPlatform-WatsonPlatform-_-OnPageNavCTA-IBMWatson_NaturalLanguageUnderstanding-_-Watson_Developer_Website"
