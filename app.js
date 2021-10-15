@@ -21,7 +21,7 @@ const { IamAuthenticator } = require('ibm-watson/auth');
 const app = express();
 // Create the service wrapper
 const nlu = new NaturalLanguageUnderstandingV1({
-  version: '2020-03-10',
+  version: '2021-10-15',
   authenticator: new IamAuthenticator({
     apikey: process.env.NATURAL_LANGUAGE_UNDERSTANDING_IAM_APIKEY || 'type-key-here',
   }),
